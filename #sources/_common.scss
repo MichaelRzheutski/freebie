@@ -1,0 +1,12 @@
+/* --------- Common Styles --------- */
+body {
+  font-family: $body-fontFamily;
+  font-size: $body-fontSize;
+}
+
+.container {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

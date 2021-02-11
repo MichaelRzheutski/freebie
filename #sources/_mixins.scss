@@ -1,0 +1,21 @@
+/// Mixin to manage responsive breakpoints for Mobile First
+$breakpoints: (
+  'minW-320px': (min-width: 320px),
+  'minW-350px': (min-width: 350px),
+  'minW-400px': (min-width: 400px),
+  'minW-600px': (min-width: 600px),
+  'minW-800px': (min-width: 800px),
+  'minW-900px': (min-width: 900px),
+  'minW-950px': (min-width: 950px),
+  'minW-1024px': (min-width: 1024px)
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

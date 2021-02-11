@@ -1,0 +1,30 @@
+// --------- Common Styles --------- //
+$body-fontFamily: 'Poppins', sans-serif;
+$body-fontSize: 16px;
+
+// --------- Header --------- //
+// Logo
+$logoNavLogo-fontSize: 44px;
+$logoNavLogo-fontWeight: 700;
+$logoNavLogo-color: #fcae61;
+
+$logoNavLogoSpan-color: #242f51;
+
+// Navigation
+$navItem-color: #5a627c;
+$navItem-bgc: #ccc;
+
+$navItemHover-bgc: #fcae61;
+
+$navToggleBeforeAfter-bgc: #ccc;
+
+$navItemHover-color: #000;
+
+/* Navigation Min-Width 900px */
+$current-bgc: #2500f9;
+$current-color: #fff;
+$current-fontWeight: 700;
+$current-bdrs: 20px;
+
+$currentHover-bgc: #2500f9;
+$currentHover-color: #ccc;
