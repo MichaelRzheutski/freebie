@@ -91,7 +91,7 @@ body {
   justify-content: space-between;
   grid-template-columns: 25% 75%;
   position: relative;
-  height: 50px;
+  height: 65px;
   padding-top: 15px;
 }
 .logo-nav__logo {
@@ -216,5 +216,97 @@ body {
 
   .nav-toggle {
     display: none;
+  }
+}
+/* Header Text */
+.header-text-wrap {
+  background: url(../img/header-bg.png) top/cover no-repeat;
+  margin-top: 70px;
+  color: #242f51;
+}
+.header-text-wrap .header-text-phone {
+  display: grid;
+  justify-items: center;
+}
+.header-text-wrap .header-text-phone .header-text-block__editors-choice {
+  background: #e2eaed url(../img/editors-choice.png) left no-repeat;
+  font-size: 14px;
+  line-height: 37px;
+  padding-left: 45px;
+  border-radius: 20px;
+}
+.header-text-wrap .header-text-phone .header-text-block__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+  margin: 10px 0 20px 0;
+}
+.header-text-wrap .header-text-phone .header-text-block__slogan {
+  margin-bottom: 30px;
+}
+.header-text-wrap .header-text-phone .header-text-block__demo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-text-wrap .header-text-phone .header-text-block__demo-wrap .demo-wrap__button {
+  display: inline-block;
+  background-color: #2500f9;
+  color: #fff;
+  font-weight: 700;
+  line-height: 3em;
+  padding: 0 40px;
+  border-radius: 20px;
+  width: 175px;
+}
+.header-text-wrap .header-text-phone .header-text-block__demo-wrap .demo-wrap__button:hover {
+  background: #2500f9;
+  color: #ccc;
+}
+.header-text-wrap .header-text-phone .header-text-block__demo-wrap .demo-wrap__watch-demo {
+  color: #2500f9;
+  margin-top: 25px;
+}
+.header-text-wrap .header-phone {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Min-Width 600px */
+@media (min-width: 600px) {
+  .header-text-wrap {
+    margin-top: 30px;
+  }
+  .header-text-wrap .header-text-phone {
+    grid-template-columns: 51% 37%;
+    grid-column-gap: 3%;
+    justify-content: end;
+    align-items: center;
+  }
+}
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  .header-text-wrap {
+    margin-top: 70px;
+  }
+  .header-text-wrap .header-text-phone .header-text-block__editors-choice {
+    width: 367px;
+    font-size: 18px;
+  }
+  .header-text-wrap .header-text-phone .header-text-block__title {
+    font-size: 58px;
+    line-height: 75px;
+  }
+  .header-text-wrap .header-text-phone .header-text-block__demo-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 350px;
+  }
+}
+/* Min-Width 900px */
+@media (min-width: 900px) {
+  .header-text-wrap .header-text-phone .header-text-block__title {
+    font-size: 60px;
   }
 }
