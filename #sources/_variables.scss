@@ -20,7 +20,7 @@ $navToggleBeforeAfter-bgc: #ccc;
 
 $navItemHover-color: #000;
 
-/* Navigation Min-Width 900px */
+/* Navigation - Min-Width 900px */
 $current-bgc: #2500f9;
 $current-color: #fff;
 $current-fontWeight: 700;
@@ -28,3 +28,34 @@ $current-bdrs: 20px;
 
 $currentHover-bgc: #2500f9;
 $currentHover-color: #ccc;
+
+/* Header Text */
+$headerTextWrap-color: #242f51;
+
+$headerTextBlockEditorsChoice-bgc: #e2eaed;
+$headerTextBlockEditorsChoice-fontSize: 14px;
+$headerTextBlockEditorsChoice-lineHeight: 37px;
+$headerTextBlockEditorsChoice-bdrs: 20px;
+
+$headerTextBlockTitle-fontSize: 35px;
+$headerTextBlockTitle-fontWeight: 700;
+$headerTextBlockTitle-lineHeight: 45px;
+
+$demoWrapButton-bgc: #2500f9;
+$demoWrapButton-color: #fff;
+$demoWrapButton-fontWeight: 700;
+$demoWrapButton-lineHeight: 3em;
+$demoWrapButton-bdrs: 20px;
+
+$demoWrapButtonHover-bg: #2500f9;
+$demoWrapButtonHover-color: #ccc;
+
+$demoWrapWatchDemo-color: #2500f9;
+
+/* Header Text - Min-Width 800px */
+$headerTextBlockEditorsChoice800-fontSize: 18px;
+
+$headerTextBlockTitle800-fontSize: 58px;
+$headerTextBlockTitle800-lineHeight: 75px;
+
+$headerTextBlockTitle900-fontSize: 60px;

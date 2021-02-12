@@ -189,24 +189,24 @@
 .header-text-wrap {
   background: url(../img/header-bg.png) top/cover no-repeat;
   margin-top: 70px;
-  color: #242f51;
+  color: $headerTextWrap-color;
 
   .header-text-phone {
     display: grid;
     justify-items: center;
 
     .header-text-block__editors-choice {
-      background: #e2eaed url(../img/editors-choice.png) left no-repeat;
-      font-size: 14px;
-      line-height: 37px;
+      background: $headerTextBlockEditorsChoice-bgc url(../img/editors-choice.png) left no-repeat;
       padding-left: 45px;
-      border-radius: 20px;
+      font-size: $headerTextBlockEditorsChoice-fontSize;
+      line-height: $headerTextBlockEditorsChoice-lineHeight;
+      border-radius: $headerTextBlockEditorsChoice-bdrs;
     }
 
     .header-text-block__title {
-      font-size: 35px;
-      font-weight: 700;
-      line-height: 45px;
+      font-size: $headerTextBlockTitle-fontSize;
+      font-weight: $headerTextBlockTitle-fontWeight;
+      line-height: $headerTextBlockTitle-lineHeight;
       margin: 10px 0 20px 0;
     }
 
@@ -221,23 +221,23 @@
 
       .demo-wrap__button {
         display: inline-block;
-        background-color: #2500f9;
-        color: #fff;;
-        font-weight: 700;
-        line-height: 3em;
+        background-color: $demoWrapButton-bgc;
+        color: $demoWrapButton-color;
+        font-weight: $demoWrapButton-fontWeight;
+        line-height: $demoWrapButton-lineHeight;
+        border-radius: $demoWrapButton-bdrs;
         padding: 0 40px;
-        border-radius: 20px;
         width: 175px;
 
         &:hover {
-          background: #2500f9;
-          color: #ccc;
+          background: $demoWrapButtonHover-bg;
+          color: $demoWrapButtonHover-color;
         }
 
       }
 
       .demo-wrap__watch-demo {
-        color: #2500f9;
+        color: $demoWrapWatchDemo-color;
         margin-top: 25px;
       }
 
@@ -277,12 +277,12 @@
 
       .header-text-block__editors-choice {
         width: 367px;
-        font-size: 18px;
+        font-size: $headerTextBlockEditorsChoice800-fontSize;
       }
 
       .header-text-block__title {
-        font-size: 58px;
-        line-height: 75px;
+        font-size: $headerTextBlockTitle800-fontSize;
+        line-height: $headerTextBlockTitle800-lineHeight;
       }
 
       .header-text-block__demo-wrap {
@@ -305,7 +305,7 @@
     .header-text-phone {
 
       .header-text-block__title {
-        font-size: 60px;
+        font-size: $headerTextBlockTitle900-fontSize;
       }
 
     }
@@ -313,72 +313,3 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .header-text-phone {
-//   display: grid;
-//   justify-content: end;
-//   align-items: center;
-//   grid-template-columns: 54% 41%;
-//   grid-column-gap: 3%;
-// }
-//
-// .header-text-block__editors-choice {
-//   background: #e2eaed url(../img/editors-choice.png) left no-repeat;
-//   font-size: 18px;
-//   line-height: 37px;
-//   width: 370px;
-//   padding-left: 45px;
-//   border-radius: 20px;
-// }
-//
-// .header-text-block__title {
-//   font-size: 60px;
-//   font-weight: 700;
-//   line-height: 75px;
-//
-//   margin: 10px 0 20px 0;
-// }
-//
-// .header-text-block__slogan {
-//   margin-bottom: 30px;
-// }
-//
-// .header-text-block__demo-wrap {
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .demo-wrap__button {
-//   display: inline-block;
-//   background-color: #2500f9;
-//   color: #fff;;
-//   font-weight: 700;
-//   line-height: 3em;
-//   padding: 0 40px;
-//   border-radius: 20px;
-//
-//   &:hover {
-//     background: #2500f9;
-//     color: #ccc;
-//   }
-//
-// }
-//
-// .demo-wrap__watch-demo {
-//   color: #2500f9;
-//
-//   margin-left: 25px;
-// }
-//

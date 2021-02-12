@@ -70,7 +70,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/* Navigation Min-Width 900px */
+/* Navigation - Min-Width 900px */
+/* Header Text */
+/* Header Text - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -230,9 +232,9 @@ body {
 }
 .header-text-wrap .header-text-phone .header-text-block__editors-choice {
   background: #e2eaed url(../img/editors-choice.png) left no-repeat;
+  padding-left: 45px;
   font-size: 14px;
   line-height: 37px;
-  padding-left: 45px;
   border-radius: 20px;
 }
 .header-text-wrap .header-text-phone .header-text-block__title {
@@ -255,8 +257,8 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 3em;
-  padding: 0 40px;
   border-radius: 20px;
+  padding: 0 40px;
   width: 175px;
 }
 .header-text-wrap .header-text-phone .header-text-block__demo-wrap .demo-wrap__button:hover {
