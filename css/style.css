@@ -312,3 +312,35 @@ body {
     font-size: 60px;
   }
 }
+/* --------- Logos --------- */
+.logos-wrap {
+  padding-top: 116px;
+}
+.logos-wrap .logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logos-wrap .logos-title {
+  margin-bottom: 36px;
+}
+.logos-wrap .logos-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logos-wrap .logos-images .logos-images__item {
+  padding-bottom: 30px;
+}
+/* Min-Width 400px */
+@media (min-width: 400px) {
+  .logos-wrap .logos-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .logos-wrap .logos-images .logos-images__item {
+    padding-right: 40px;
+  }
+}
