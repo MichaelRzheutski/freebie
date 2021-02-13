@@ -73,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation - Min-Width 900px */
 /* Header Text */
 /* Header Text - Min-Width 800px */
+/* --------- Awesome Apps --------- */
+/* Awesome Apps - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -222,6 +224,7 @@ body {
 }
 /* Header Text */
 .header-text-wrap {
+  max-height: 1120px;
   background: url(../img/header-bg.png) top/cover no-repeat;
   margin-top: 70px;
   color: #242f51;
@@ -238,7 +241,7 @@ body {
   border-radius: 20px;
 }
 .header-text-wrap .header-text-phone .header-text-block__title {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 45px;
   margin: 10px 0 20px 0;
@@ -329,9 +332,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.logos-wrap .logos-images .logos-images__item {
+.logos-wrap .logos-images__item {
   padding-bottom: 30px;
 }
+
 /* Min-Width 400px */
 @media (min-width: 400px) {
   .logos-wrap .logos-images {
@@ -340,7 +344,105 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .logos-wrap .logos-images .logos-images__item {
+  .logos-wrap .logos-images__item {
     padding-right: 40px;
+  }
+}
+/* --------- Awesome Apps --------- */
+.awesome-apps-wrap {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1390px;
+  margin: 0 auto;
+  color: #242f51;
+}
+.awesome-apps-wrap .awesome-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awesome-apps-wrap .awesome-apps__phone img {
+  max-width: 100%;
+  height: auto;
+}
+.awesome-apps-wrap .awesome-apps__advantages {
+  padding-top: 50px;
+  max-width: 440px;
+  padding: 0 15px;
+}
+.awesome-apps-wrap .awesome-apps__advantages .advantages__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  max-width: 100%;
+}
+.awesome-apps-wrap .awesome-apps__advantages .advantages__text {
+  padding: 20px 0 50px 0;
+  color: #616368;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance, .awesome-apps-wrap .awesome-apps__advantages .prototyping, .awesome-apps-wrap .awesome-apps__advantages .vector-editing {
+  padding-top: 120px;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance, .awesome-apps-wrap .awesome-apps__advantages .prototyping {
+  margin-bottom: 30px;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance {
+  background: url(../img/awesome/fast-performance.png) center top no-repeat;
+}
+.awesome-apps-wrap .awesome-apps__advantages .prototyping {
+  background: url(../img/awesome/prototyping.png) center top no-repeat;
+}
+.awesome-apps-wrap .awesome-apps__advantages .vector-editing {
+  background: url(../img/awesome/vector-editing.png) center top no-repeat;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance__title, .awesome-apps-wrap .awesome-apps__advantages .prototyping__title, .awesome-apps-wrap .awesome-apps__advantages .vector-editing__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance__text, .awesome-apps-wrap .awesome-apps__advantages .prototyping__text, .awesome-apps-wrap .awesome-apps__advantages .vector-editing__text {
+  color: #616368;
+  max-width: 100%;
+}
+.awesome-apps-wrap .awesome-apps__advantages .fast-performance__title {
+  color: #f55767;
+}
+.awesome-apps-wrap .awesome-apps__advantages .prototyping__title {
+  color: #2563ff;
+}
+.awesome-apps-wrap .awesome-apps__advantages .vector-editing__title {
+  color: #40975f;
+}
+
+/* Min-Width 600px */
+@media (min-width: 600px) {
+  /* --------- Awesome Apps --------- */
+  .awesome-apps-wrap {
+    padding-top: 100px;
+  }
+  .awesome-apps-wrap .awesome-apps {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* --------- Awesome Apps --------- */
+  .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .advantages__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .fast-performance, .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .prototyping, .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .vector-editing {
+    padding-top: 0;
+    padding-left: 120px;
+  }
+  .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .fast-performance {
+    background-position: left center;
+  }
+  .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .prototyping {
+    background-position: left center;
+  }
+  .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .vector-editing {
+    background-position: left center;
   }
 }

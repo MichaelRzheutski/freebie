@@ -29,6 +29,7 @@ $current-bdrs: 20px;
 $currentHover-bgc: #2500f9;
 $currentHover-color: #ccc;
 
+
 /* Header Text */
 $headerTextWrap-color: #242f51;
 
@@ -37,7 +38,7 @@ $headerTextBlockEditorsChoice-fontSize: 14px;
 $headerTextBlockEditorsChoice-lineHeight: 37px;
 $headerTextBlockEditorsChoice-bdrs: 20px;
 
-$headerTextBlockTitle-fontSize: 35px;
+$headerTextBlockTitle-fontSize: 32px;
 $headerTextBlockTitle-fontWeight: 700;
 $headerTextBlockTitle-lineHeight: 45px;
 
@@ -59,3 +60,29 @@ $headerTextBlockTitle800-fontSize: 58px;
 $headerTextBlockTitle800-lineHeight: 75px;
 
 $headerTextBlockTitle900-fontSize: 60px;
+
+
+/* --------- Awesome Apps --------- */
+$awesomeAppsWrap-color: #242f51;
+
+$advantagesTitle-fontSize: 28px;
+$advantagesTitle-fontWeight: 700;
+$advantagesTitle-lineHeight: 33px;
+
+$advantagesText-color: #616368;
+
+$FPT-PT-VET-fontSize: 20px;
+$FPT-PT-VET-fontWeight: 700;
+$FPT-PT-VET-lineHeight: 58px;
+
+$FPT-PT-VET-color: #616368;
+
+$FPT-color: #f55767;
+
+$PT-color: #2563ff;
+
+$VET-color: #40975f;
+
+/* Awesome Apps - Min-Width 800px */
+$advantagesTitle-fontSize800: 36px;
+$advantagesTitle-lineHeight800: 46px;
