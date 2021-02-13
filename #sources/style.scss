@@ -500,3 +500,85 @@
   }
 
 }
+
+/* Smart Jackpots */
+.smart-jackpots-wrap {
+  padding-top: 30px;
+
+  .smart-jackpots {
+    display: flex;
+    flex-direction: column;
+
+    &__slogan {
+      font-size: $smartJackpotsSlogan-fontSize;
+      font-weight: $smartJackpotsSlogan-fontWeight;
+      line-height: $smartJackpotsSlogan-lineHeight;
+      color: $smartJackpotsSlogan-color;
+
+      border-bottom: $smartJackpotsSlogan-borderBottom;
+
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      font-size: $smartJackpotsText-fontSize;
+      line-height: $smartJackpotsText-lineHeight;
+      color: $smartJackpotsText-color;
+
+      padding-top: 30px;
+    }
+
+  }
+
+}
+
+/* Min-Width 600px */
+@include respond-to('minW-600px') {
+  /* Smart Jackpots */
+  .smart-jackpots-wrap {
+
+    .smart-jackpots {
+      flex-direction: row;
+      align-items: flex-start;
+
+      &__slogan {
+        border-bottom: $smartJackpotsText-borderBottom600;
+        border-right: $smartJackpotsText-borderRight600;
+
+        padding-right: 30px;
+      }
+
+      &__text {
+        padding-left: 30px;
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 800px */
+@include respond-to('minW-800px') {
+  /* Smart Jackpots */
+  .smart-jackpots-wrap {
+
+    .smart-jackpots {
+
+      &__slogan {
+        font-size: $smartJackpotsSlogan-fontSize800;
+        font-weight: $smartJackpotsSlogan-fontWeight800;
+        line-height: $smartJackpotsSlogan-lineHeight800;
+
+        padding-right: 73px;
+      }
+
+      &__text {
+        padding-left: 48px;
+      }
+
+    }
+
+  }
+
+}

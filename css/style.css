@@ -75,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Text - Min-Width 800px */
 /* --------- Awesome Apps --------- */
 /* Awesome Apps - Min-Width 800px */
+/* Smart Jackpots */
+/* Smart Jackpots - Min-Width 600px */
+/* Smart Jackpots - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -444,5 +447,57 @@ body {
   }
   .awesome-apps-wrap .awesome-apps .awesome-apps__advantages .vector-editing {
     background-position: left center;
+  }
+}
+/* Smart Jackpots */
+.smart-jackpots-wrap {
+  padding-top: 30px;
+}
+.smart-jackpots-wrap .smart-jackpots {
+  display: flex;
+  flex-direction: column;
+}
+.smart-jackpots-wrap .smart-jackpots__slogan {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #242f51;
+  border-bottom: 1px solid #b9b9b8;
+  padding-bottom: 30px;
+}
+.smart-jackpots-wrap .smart-jackpots__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #616368;
+  padding-top: 30px;
+}
+
+/* Min-Width 600px */
+@media (min-width: 600px) {
+  /* Smart Jackpots */
+  .smart-jackpots-wrap .smart-jackpots {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .smart-jackpots-wrap .smart-jackpots__slogan {
+    border-bottom: none;
+    border-right: 1px solid #b9b9b8;
+    padding-right: 30px;
+  }
+  .smart-jackpots-wrap .smart-jackpots__text {
+    padding-left: 30px;
+  }
+}
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* Smart Jackpots */
+  .smart-jackpots-wrap .smart-jackpots__slogan {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-right: 73px;
+  }
+  .smart-jackpots-wrap .smart-jackpots__text {
+    padding-left: 48px;
   }
 }
