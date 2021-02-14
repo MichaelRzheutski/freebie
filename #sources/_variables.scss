@@ -106,3 +106,23 @@ $smartJackpotsText-borderRight600: 1px solid #b9b9b8;
 $smartJackpotsSlogan-fontSize800: 40px;
 $smartJackpotsSlogan-fontWeight800: 700;
 $smartJackpotsSlogan-lineHeight800: 50px;
+
+
+/* --------- Automatic Payouts --------- */
+$APT-NET-BRMT-FontSize: 20px;
+$APT-NET-BRMT-FontWeight: 700;
+$APT-NET-BRMT-lineHeight: 58px;
+
+$APT-color: #f55767;
+
+$NET-color: #2563ff;
+
+$BRMT-color: #40975f;
+
+$APText-NEText-BRMText-color: #616368;
+
+/* Automatic Payouts - Min-Width 600px */
+$APT-NET-BRMT-lineHeight600: 30px;
+
+/* Automatic Payouts - Min-Width 800px */
+$APT-NET-BRMT-lineHeight800: 58px;

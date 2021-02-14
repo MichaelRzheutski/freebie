@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Smart Jackpots */
 /* Smart Jackpots - Min-Width 600px */
 /* Smart Jackpots - Min-Width 800px */
+/* --------- Automatic Payouts --------- */
+/* Automatic Payouts - Min-Width 600px */
+/* Automatic Payouts - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -499,5 +502,106 @@ body {
   }
   .smart-jackpots-wrap .smart-jackpots__text {
     padding-left: 48px;
+  }
+}
+/* --------- Automatic Payouts --------- */
+.automatic-payouts-wrap {
+  padding-top: 50px;
+}
+.automatic-payouts-wrap .automatic-payouts-block {
+  display: flex;
+  flex-direction: column;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+  padding-top: 100px;
+  width: 100%;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect {
+  margin-bottom: 50px;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts {
+  background: url(../img/automatic-payouts/automatic-payouts.png) center top no-repeat;
+}
+.automatic-payouts-wrap .automatic-payouts-block .network-effect {
+  background: url(../img/automatic-payouts/network-effect.png) center top no-repeat;
+}
+.automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+  background: url(../img/automatic-payouts/bigger-rewards-method.png) center top no-repeat;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__title, .automatic-payouts-wrap .automatic-payouts-block .network-effect__title, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__title {
+  color: #f55767;
+}
+.automatic-payouts-wrap .automatic-payouts-block .network-effect__title {
+  color: #2563ff;
+}
+.automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method__title {
+  color: #40975f;
+}
+.automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__text, .automatic-payouts-wrap .automatic-payouts-block .network-effect__text, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method__text {
+  color: #616368;
+}
+
+/* Min-Width 600px */
+@media (min-width: 600px) {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap .automatic-payouts-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect {
+    padding-right: 20px;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts {
+    background-position: left top;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .network-effect {
+    background-position: left top;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+    background-position: left top;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__title, .automatic-payouts-wrap .automatic-payouts-block .network-effect__title, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method__title {
+    line-height: 30px;
+    padding-bottom: 15px;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__title {
+    flex: 1 1 auto;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .network-effect__title {
+    flex: 1 1 auto;
+  }
+}
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap {
+    padding-top: 110px;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+    max-width: 250px;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts__title, .automatic-payouts-wrap .automatic-payouts-block .network-effect__title, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method__title {
+    line-height: 58px;
+    padding-bottom: 0;
+  }
+}
+/* Min-Width 900px */
+@media (min-width: 900px) {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect, .automatic-payouts-wrap .automatic-payouts-block .bigger-rewards-method {
+    max-width: 265px;
+  }
+  .automatic-payouts-wrap .automatic-payouts-block .automatic-payouts, .automatic-payouts-wrap .automatic-payouts-block .network-effect {
+    padding-right: 0;
   }
 }

@@ -582,3 +582,155 @@
   }
 
 }
+
+
+/* --------- Automatic Payouts --------- */
+.automatic-payouts-wrap {
+  padding-top: 50px;
+
+  .automatic-payouts-block {
+    display: flex;
+    flex-direction: column;
+
+    .automatic-payouts, .network-effect, .bigger-rewards-method {
+      padding-top: 100px;
+      width: 100%;
+    }
+
+    .automatic-payouts, .network-effect {
+      margin-bottom: 50px;
+    }
+
+    .automatic-payouts {
+      background: url(../img/automatic-payouts/automatic-payouts.png) center top no-repeat;
+    }
+
+    .network-effect {
+      background: url(../img/automatic-payouts/network-effect.png) center top no-repeat;
+    }
+
+    .bigger-rewards-method {
+      background: url(../img/automatic-payouts/bigger-rewards-method.png) center top no-repeat;
+    }
+
+    .automatic-payouts__title, .network-effect__title, .bigger-rewards-method__title {
+      font-size: $APT-NET-BRMT-FontSize;
+      font-weight: $APT-NET-BRMT-FontWeight;
+      line-height: $APT-NET-BRMT-lineHeight;
+    }
+
+    .automatic-payouts__title {
+      color: $APT-color;
+    }
+
+    .network-effect__title {
+      color: $NET-color;
+    }
+
+    .bigger-rewards-method__title {
+      color: $BRMT-color;
+    }
+
+    .automatic-payouts__text, .network-effect__text, .bigger-rewards-method__text {
+      color: $APText-NEText-BRMText-color;
+    }
+
+  }
+
+}
+
+/* Min-Width 600px */
+@include respond-to('minW-600px') {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap {
+
+    .automatic-payouts-block {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .automatic-payouts, .network-effect, .bigger-rewards-method {
+        max-width: 215px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .automatic-payouts, .network-effect{
+        padding-right: 20px;
+      }
+
+      .automatic-payouts {
+        background-position: left top;
+      }
+
+      .network-effect {
+        background-position: left top;
+      }
+
+      .bigger-rewards-method {
+        background-position: left top;
+      }
+
+      .automatic-payouts__title, .network-effect__title, .bigger-rewards-method__title {
+        line-height: $APT-NET-BRMT-lineHeight600;
+        padding-bottom: 15px;
+      }
+
+      .automatic-payouts__title {
+        flex: 1 1 auto;
+      }
+
+      .network-effect__title {
+        flex: 1 1 auto;
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 800px */
+@include respond-to('minW-800px') {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap {
+    padding-top: 110px;
+
+    .automatic-payouts-block {
+
+      .automatic-payouts, .network-effect, .bigger-rewards-method {
+        max-width: 250px;
+      }
+
+      .automatic-payouts__title, .network-effect__title, .bigger-rewards-method__title {
+        line-height: $APT-NET-BRMT-lineHeight800;
+
+        padding-bottom: 0;
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 900px */
+@include respond-to('minW-900px') {
+  /* --------- Automatic Payouts --------- */
+  .automatic-payouts-wrap {
+
+    .automatic-payouts-block {
+
+      .automatic-payouts, .network-effect, .bigger-rewards-method {
+        max-width: 265px;
+      }
+
+      .automatic-payouts, .network-effect{
+        padding-right: 0;
+      }
+
+    }
+
+  }
+
+}
