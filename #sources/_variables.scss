@@ -42,6 +42,8 @@ $headerTextBlockTitle-fontSize: 32px;
 $headerTextBlockTitle-fontWeight: 700;
 $headerTextBlockTitle-lineHeight: 45px;
 
+$headerTextBlockSlogan-lineHeight: 26px;
+
 $demoWrapButton-bgc: #2500f9;
 $demoWrapButton-color: #fff;
 $demoWrapButton-fontWeight: 700;
@@ -70,12 +72,14 @@ $advantagesTitle-fontWeight: 700;
 $advantagesTitle-lineHeight: 33px;
 
 $advantagesText-color: #616368;
+$advantagesText-lineHeight: 26px;
 
 $FPT-PT-VET-fontSize: 20px;
 $FPT-PT-VET-fontWeight: 700;
 $FPT-PT-VET-lineHeight: 58px;
 
-$FPT-PT-VET-color: #616368;
+$FPT-PT-VET-text-color: #616368;
+$FPT-PT-VET-text-lineHeight: 26px;
 
 $FPT-color: #f55767;
 
@@ -120,9 +124,33 @@ $NET-color: #2563ff;
 $BRMT-color: #40975f;
 
 $APText-NEText-BRMText-color: #616368;
+$APText-NEText-BRMText-lineHeight: 26px;
 
 /* Automatic Payouts - Min-Width 600px */
 $APT-NET-BRMT-lineHeight600: 30px;
 
 /* Automatic Payouts - Min-Width 800px */
 $APT-NET-BRMT-lineHeight800: 58px;
+
+
+/* --------- Designed --------- */
+$designedSection-borderBottom: 1px solid #f4f4f4;
+
+$designedWrap-color: #242f51;
+
+$designedContentTitle-fontSize: 28px;
+$designedContentTitle-fontWeight: 700;
+$designedContentTitle-lineHeight: 33px;
+
+$designedContentText-color: #616368;
+$designedContentText-lineHeight: 26px;
+
+$designedContentBtn-bgc: #2500f9;
+$designedContentBtn-color: #fff;
+$designedContentBtn-fontWeight: 700;
+$designedContentBtn-lineHeight: 3em;
+$designedContentBtn-bdrs: 20px;
+
+/* Designed - Min-Width 800px */
+$designedContentTitle-fontSize800: 36px;
+$designedContentTitle-lineHeight800: 46px;
