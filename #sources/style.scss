@@ -871,3 +871,110 @@
   }
 
 }
+
+
+/* --------- Why Choose --------- */
+.why-choose-wrap {
+  color: $whyChooseWrap-color;
+
+  padding-top: 70px;
+
+  .why-choose {
+    display: grid;
+    grid-template-rows: 6% 8%;
+    justify-items: center;
+
+    .why-choose__title {
+      font-size: $whyChooseTitle-fontSize;
+      line-height: $whyChooseTitle-lineHeight;
+      font-weight: $whyChooseTitle-fontWeight;
+      color: $whyChooseTitle-color;
+      text-align: $whyChooseTitle-textAlign;
+      max-width: 440px;
+    }
+
+    .why-choose__text {
+      line-height: $whyChooseText-lineHeight;
+      text-align: $whyChooseText-textAlign;
+      padding-bottom: 50px;
+      max-width: 640px;
+    }
+
+    .why-choose-advantages {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+
+      .why-choose-advantages__item {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        .why-choose-advantages__title {
+          font-size: $whyChooseAdvantagesTitle-fontSize;
+          line-height: $whyChooseAdvantagesTitle-lineHeight;
+          font-weight: $whyChooseAdvantagesTitle-fontWeight;
+          color: $whyChooseAdvantagesTitle-color;
+          text-align: $whyChooseAdvantagesTitle-textAlign;
+        }
+
+        .why-choose-advantages__text {
+          text-align: $whyChooseAdvantagesText-textAlign;
+          max-width: 300px;
+        }
+
+      }
+
+      .why-choose-advantages__item_app-development {
+        background: url(../img/why-choose/app-development.png) center top no-repeat;
+      }
+
+      .why-choose-advantages__item_10-times-award {
+        background: url(../img/why-choose/10-times-award.png) center top no-repeat;
+      }
+
+      .why-choose-advantages__item_cloud-storage {
+        background: url(../img/why-choose/cloud-storage.png) center top no-repeat;
+      }
+
+      .why-choose-advantages__item_customization {
+        background: url(../img/why-choose/customization.png) center top no-repeat;
+      }
+
+      .why-choose-advantages__item_ux-planning {
+        background: url(../img/why-choose/ux-planning.png) center top no-repeat;
+      }
+
+      .why-choose-advantages__item_customer-support {
+        background: url(../img/why-choose/customer-support.png) center top no-repeat;
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 800px */
+@include respond-to('minW-800px') {
+  /* --------- Why Choose --------- */
+  .why-choose-wrap {
+
+    .why-choose {
+      grid-template-rows: repeat(2, 1fr);
+
+      .why-choose__title {
+        font-size: $whyChooseTitle-fontSize800;
+        line-height: $whyChooseTitle-lineHeight800;
+      }
+
+      .why-choose-advantages {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 5%;
+
+      }
+
+    }
+
+  }
+
+}

@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Automatic Payouts - Min-Width 800px */
 /* --------- Designed --------- */
 /* Designed - Min-Width 800px */
+/* --------- Why Choose --------- */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -688,5 +689,83 @@ body {
   /* --------- Awesome Apps --------- */
   .designed-section .designed-wrap .designed {
     padding-left: 50px;
+  }
+}
+/* --------- Why Choose --------- */
+.why-choose-wrap {
+  color: #616368;
+  padding-top: 70px;
+}
+.why-choose-wrap .why-choose {
+  display: grid;
+  grid-template-rows: 6% 8%;
+  justify-items: center;
+}
+.why-choose-wrap .why-choose .why-choose__title {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  color: #242f51;
+  text-align: center;
+  max-width: 440px;
+}
+.why-choose-wrap .why-choose .why-choose__text {
+  line-height: 26px;
+  padding-bottom: 50px;
+  text-align: center;
+  max-width: 640px;
+}
+.why-choose-wrap .why-choose .why-choose-advantages {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item .why-choose-advantages__title {
+  font-size: 20px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #242f51;
+  text-align: center;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item .why-choose-advantages__text {
+  text-align: center;
+  max-width: 300px;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_app-development {
+  background: url(../img/why-choose/app-development.png) center top no-repeat;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_10-times-award {
+  background: url(../img/why-choose/10-times-award.png) center top no-repeat;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_cloud-storage {
+  background: url(../img/why-choose/cloud-storage.png) center top no-repeat;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_customization {
+  background: url(../img/why-choose/customization.png) center top no-repeat;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_ux-planning {
+  background: url(../img/why-choose/ux-planning.png) center top no-repeat;
+}
+.why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item_customer-support {
+  background: url(../img/why-choose/customer-support.png) center top no-repeat;
+}
+
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* --------- Why Choose --------- */
+  .why-choose-wrap .why-choose {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .why-choose-wrap .why-choose .why-choose__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .why-choose-wrap .why-choose .why-choose-advantages {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5%;
   }
 }
