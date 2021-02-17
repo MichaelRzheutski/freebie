@@ -8,7 +8,9 @@ $breakpoints: (
   'minW-800px': (min-width: 800px),
   'minW-900px': (min-width: 900px),
   'minW-950px': (min-width: 950px),
-  'minW-1024px': (min-width: 1024px)
+  'minW-1024px': (min-width: 1024px),
+  'minW-1100px': (min-width: 1100px),
+  'minW-1300px': (min-width: 1300px)
 ) !default;
 
 @mixin respond-to($breakpoint) {

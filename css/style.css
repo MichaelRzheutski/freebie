@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 /* --------- Designed --------- */
 /* Designed - Min-Width 800px */
 /* --------- Why Choose --------- */
+/* Why Choose - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -711,8 +712,8 @@ body {
 }
 .why-choose-wrap .why-choose .why-choose__text {
   line-height: 26px;
-  padding-bottom: 50px;
   text-align: center;
+  padding-bottom: 50px;
   max-width: 640px;
 }
 .why-choose-wrap .why-choose .why-choose-advantages {
@@ -731,6 +732,7 @@ body {
   text-align: center;
 }
 .why-choose-wrap .why-choose .why-choose-advantages .why-choose-advantages__item .why-choose-advantages__text {
+  line-height: 26px;
   text-align: center;
   max-width: 300px;
 }
@@ -767,5 +769,139 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5%;
+  }
+}
+/* --------- Ultimate Features --------- */
+.ultimate-features-section {
+  width: 100%;
+  max-width: 1590px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+.ultimate-features-section .ultimate-features__phone {
+  overflow: hidden;
+}
+.ultimate-features-section .ultimate-features__phone img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 6%;
+}
+.ultimate-features-section .ultimate-features-wrap {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  color: #616368;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content {
+  padding: 0 15px;
+  text-align: center;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-content__title {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  color: #242f51;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-content__text {
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item .ultimate-features-advantages__title {
+  font-size: 20px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #242f51;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item .ultimate-features-advantages__text {
+  line-height: 26px;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item_app-development {
+  background: url(../img/ultimate-features/app-development.png) center top no-repeat;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item_ux-planing {
+  background: url(../img/ultimate-features/ux-planing.png) center top no-repeat;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item_cloud-storage {
+  background: url(../img/ultimate-features/cloud-storage.png) center top no-repeat;
+}
+.ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item_customer-support {
+  background: url(../img/ultimate-features/customer-support.png) center top no-repeat;
+}
+
+/* Min-Width 400px */
+@media (min-width: 400px) {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    padding-top: 70px;
+  }
+}
+/* Min-Width 600px */
+@media (min-width: 600px) {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    padding-top: 100px;
+  }
+}
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    position: relative;
+  }
+  .ultimate-features-section .ultimate-features__phone {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 48%;
+    padding-left: 3%;
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features {
+    flex-direction: row;
+    align-items: center;
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content {
+    text-align: left;
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-content__title {
+    font-size: 36px;
+    line-height: 46px;
+    max-width: 330px;
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-content__text {
+    line-height: 26px;
+    max-width: 400px;
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages {
+    grid-column-gap: 5%;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 26%);
+  }
+  .ultimate-features-section .ultimate-features-wrap .ultimate-features .ultimate-features-content .ultimate-features-advantages .ultimate-features-advantages__item .ultimate-features-advantages__text {
+    max-width: 600px;
+  }
+}
+/* Min-Width 1300px */
+@media (min-width: 1300px) {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section .ultimate-features__phone {
+    padding-left: 0;
   }
 }

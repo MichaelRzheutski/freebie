@@ -917,6 +917,7 @@
         }
 
         .why-choose-advantages__text {
+          line-height: $whyChooseAdvantagesText-lineHeight;
           text-align: $whyChooseAdvantagesText-textAlign;
           max-width: 300px;
         }
@@ -973,6 +974,196 @@
 
       }
 
+    }
+
+  }
+
+}
+
+
+/* --------- Ultimate Features --------- */
+.ultimate-features-section {
+  width: 100%;
+  max-width: 1590px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+
+  .ultimate-features__phone {
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 6%;
+    }
+
+  }
+
+  .ultimate-features-wrap {
+      width: 100%;
+      max-width: 1070px;
+      margin: 0 auto;
+
+      color: #616368;
+
+      .ultimate-features {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .ultimate-features-content {
+          padding: 0 15px;
+          text-align: center;
+
+          .ultimate-features-content__title {
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: 700;
+            color: #242f51;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
+          .ultimate-features-content__text {
+            line-height: 26px;
+            padding-bottom: 50px;
+          }
+
+          .ultimate-features-advantages {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 1fr;
+            align-items: center;
+
+            .ultimate-features-advantages__item {
+              padding-top: 100px;
+              padding-bottom: 50px;
+
+              .ultimate-features-advantages__title {
+                font-size: 20px;
+                line-height: 58px;
+                font-weight: 700;
+                color: #242f51;
+              }
+
+              .ultimate-features-advantages__text {
+                line-height: 26px;
+              }
+
+            }
+
+            .ultimate-features-advantages__item_app-development {
+              background: url(../img/ultimate-features/app-development.png) center top no-repeat;
+            }
+
+            .ultimate-features-advantages__item_ux-planing {
+              background: url(../img/ultimate-features/ux-planing.png) center top no-repeat;
+            }
+
+            .ultimate-features-advantages__item_cloud-storage {
+              background: url(../img/ultimate-features/cloud-storage.png) center top no-repeat;
+            }
+
+            .ultimate-features-advantages__item_customer-support {
+              background: url(../img/ultimate-features/customer-support.png) center top no-repeat;
+            }
+
+          }
+
+        }
+
+      }
+
+  }
+
+}
+
+/* Min-Width 400px */
+@include respond-to('minW-400px') {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    padding-top: 70px;
+  }
+
+}
+
+/* Min-Width 600px */
+@include respond-to('minW-600px') {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    padding-top: 100px;
+  }
+
+}
+
+
+/* Min-Width 800px */
+@include respond-to('minW-800px') {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+    position: relative;
+
+    .ultimate-features__phone {
+      position: absolute;
+      top: 20%;
+      right: 0;
+      width: 48%;
+      padding-left: 3%;
+    }
+
+    .ultimate-features-wrap {
+
+        .ultimate-features {
+          flex-direction: row;
+          align-items: center;
+
+          .ultimate-features-content {
+            text-align: left;
+
+            .ultimate-features-content__title {
+              font-size: 36px;
+              line-height: 46px;
+              max-width: 330px;
+            }
+
+            .ultimate-features-content__text {
+              line-height: 26px;
+              max-width: 400px;
+            }
+
+            .ultimate-features-advantages {
+              grid-column-gap: 5%;
+              grid-template-rows: repeat(2, 50%);
+              grid-template-columns: repeat(2, 26%);
+
+              .ultimate-features-advantages__item {
+
+                .ultimate-features-advantages__text {
+                  max-width: 600px;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 1300px */
+@include respond-to('minW-1300px') {
+  /* --------- Ultimate Features --------- */
+  .ultimate-features-section {
+
+    .ultimate-features__phone {
+      padding-left: 0;
     }
 
   }
