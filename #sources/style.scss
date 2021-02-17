@@ -1032,7 +1032,7 @@
 
           .ultimate-features-advantages {
             display: grid;
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: 1fr;
             align-items: center;
 
@@ -1067,6 +1067,18 @@
 
             .ultimate-features-advantages__item_customer-support {
               background: url(../img/ultimate-features/customer-support.png) center top no-repeat;
+            }
+
+            .ultimate-features-advantages__btn {
+              display: inline-block;
+              background-color: #2500f9;
+              color: #fff;
+              font-weight: 700;
+              line-height: 3em;
+              border-radius: 20px;
+              padding: 0 40px;
+              margin: 0 auto;
+              width: 175px;
             }
 
           }
@@ -1134,7 +1146,7 @@
 
             .ultimate-features-advantages {
               grid-column-gap: 5%;
-              grid-template-rows: repeat(2, 50%);
+              grid-template-rows: 46% 45% 9%;
               grid-template-columns: repeat(2, 26%);
 
               .ultimate-features-advantages__item {
@@ -1143,6 +1155,10 @@
                   max-width: 600px;
                 }
 
+              }
+
+              .ultimate-features-advantages__btn {
+                margin: 0;
               }
 
             }
