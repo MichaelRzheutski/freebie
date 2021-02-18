@@ -10,3 +10,20 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+// Button Template
+%button {
+  display: inline-block;
+  background-color: $button-bgc;
+  color: $button-color;
+  font-weight: $button-fontWeight;
+  line-height: $button-lineHeight;
+  border-radius: $button-bdrs;
+  padding: 0 40px;
+  width: 175px;
+
+  &:hover {
+    color: $buttonHover-color;
+  }
+
+}

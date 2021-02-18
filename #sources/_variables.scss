@@ -2,6 +2,15 @@
 $body-fontFamily: 'Poppins', sans-serif;
 $body-fontSize: 16px;
 
+// Button Template
+$button-bgc: #2500f9;
+$button-color: #fff;
+$button-fontWeight: 700;
+$button-lineHeight: 3em;
+$button-bdrs: 20px;
+
+$buttonHover-color: #ccc;
+
 // --------- Header --------- //
 // Logo
 $logoNavLogo-fontSize: 44px;
@@ -43,15 +52,6 @@ $headerTextBlockTitle-fontWeight: 700;
 $headerTextBlockTitle-lineHeight: 45px;
 
 $headerTextBlockSlogan-lineHeight: 26px;
-
-$demoWrapButton-bgc: #2500f9;
-$demoWrapButton-color: #fff;
-$demoWrapButton-fontWeight: 700;
-$demoWrapButton-lineHeight: 3em;
-$demoWrapButton-bdrs: 20px;
-
-$demoWrapButtonHover-bg: #2500f9;
-$demoWrapButtonHover-color: #ccc;
 
 $demoWrapWatchDemo-color: #2500f9;
 
@@ -145,12 +145,6 @@ $designedContentTitle-lineHeight: 33px;
 $designedContentText-color: #616368;
 $designedContentText-lineHeight: 26px;
 
-$designedContentBtn-bgc: #2500f9;
-$designedContentBtn-color: #fff;
-$designedContentBtn-fontWeight: 700;
-$designedContentBtn-lineHeight: 3em;
-$designedContentBtn-bdrs: 20px;
-
 /* Designed - Min-Width 800px */
 $designedContentTitle-fontSize800: 36px;
 $designedContentTitle-lineHeight800: 46px;
@@ -180,3 +174,42 @@ $whyChooseAdvantagesText-textAlign: center;
 /* Why Choose - Min-Width 800px */
 $whyChooseTitle-fontSize800: 36px;
 $whyChooseTitle-lineHeight800: 46px;
+
+
+/* --------- Awesome Features --------- */
+$awesomeFeatures-textAlign: center;
+
+$awesomeFeaturesTitle-fontSize: 28px;
+$awesomeFeaturesTitle-fontWeight: 700;
+$awesomeFeaturesTitle-lineHeight: 33px;
+$awesomeFeaturesTitle-color: #242f51;
+
+$awesomeFeaturesText-lineHeight: 26px;
+
+$prices-color: #999ca5;
+
+$pricesItem-boxShadow: 0px 20px 20px 0px rgba(50, 50, 50, 0.15);
+
+$pricesHeader-bg: rgb(255,255,255);
+$pricesHeader-linearGradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,247,249,1) 100%);
+$pricesHeader-bdrs: 10px 10px;
+
+$pricesPrice-fontSize: 18px;
+$pricesPrice-lineHeight: 58px;
+
+$pricesPriceSpan-fontSize: 60px;
+$pricesPriceSpan-fontWeight: 700;
+$pricesPriceSpan-fontWeight: #242f51;
+
+$pricesPlan-lineHeight: 28px;
+
+$pricesPlan-fontSize: 20px;
+$pricesPlan-fontWeight: 700;
+$pricesPlan-color: #242f51;
+
+$pricesText-lineHeight: 48px;
+$pricesFreeTrial-color: #2500f9;
+
+$pricesItemActive-boxShadow: none;
+$pricesItemActive-border: 2px solid #ebebeb;
+$pricesItemActive-bdrs: 10px;
