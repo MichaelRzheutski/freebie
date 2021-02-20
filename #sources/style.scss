@@ -80,44 +80,44 @@
   }
 
   &__item {
-      display: block;
+    display: block;
+    width: 100%;
+    height: 5px;
+
+    background-color: #ccc;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+
+    transition: background .2s linear;
+
+    &::before,
+    &::after {
+      content: '';
       width: 100%;
       height: 5px;
 
-      background-color: #ccc;
+      background-color: $navToggleBeforeAfter-bgc;
 
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
       left: 0;
+      z-index: 1;
 
-      margin: auto;
+      transition: transform .2s linear;
+    }
 
-      transition: background .2s linear;
+    &::before {
+      top: -10px;
+    }
 
-      &::before,
-      &::after {
-        content: '';
-        width: 100%;
-        height: 5px;
-
-        background-color: $navToggleBeforeAfter-bgc;
-
-        position: absolute;
-        left: 0;
-        z-index: 1;
-
-        transition: transform .2s linear;
-      }
-
-      &::before {
-        top: -10px;
-      }
-
-      &::after {
-        bottom: -10px;
-      }
+    &::after {
+      bottom: -10px;
+    }
 
   }
 
@@ -981,84 +981,84 @@
   }
 
   .ultimate-features-wrap {
-      width: 100%;
-      max-width: 1070px;
-      margin: 0 auto;
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
 
-      color: #616368;
+    color: #616368;
 
-      .ultimate-features {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+    .ultimate-features {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
 
-        .ultimate-features-content {
-          padding: 0 15px;
-          text-align: center;
+      .ultimate-features-content {
+        padding: 0 15px;
+        text-align: center;
 
-          .ultimate-features-content__title {
-            font-size: 28px;
-            line-height: 33px;
-            font-weight: 700;
-            color: #242f51;
-            padding-top: 50px;
+        .ultimate-features-content__title {
+          font-size: 28px;
+          line-height: 33px;
+          font-weight: 700;
+          color: #242f51;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
+        .ultimate-features-content__text {
+          line-height: 26px;
+          padding-bottom: 50px;
+        }
+
+        .ultimate-features-advantages {
+          display: grid;
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-columns: 1fr;
+          align-items: center;
+
+          .ultimate-features-advantages__item {
+            padding-top: 100px;
             padding-bottom: 50px;
+
+            .ultimate-features-advantages__title {
+              font-size: 20px;
+              line-height: 58px;
+              font-weight: 700;
+              color: #242f51;
+            }
+
+            .ultimate-features-advantages__text {
+              line-height: 26px;
+            }
+
           }
 
-          .ultimate-features-content__text {
-            line-height: 26px;
-            padding-bottom: 50px;
+          .ultimate-features-advantages__item_app-development {
+            background: url(../img/ultimate-features/app-development.png) center top no-repeat;
           }
 
-          .ultimate-features-advantages {
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: 1fr;
-            align-items: center;
+          .ultimate-features-advantages__item_ux-planing {
+            background: url(../img/ultimate-features/ux-planing.png) center top no-repeat;
+          }
 
-            .ultimate-features-advantages__item {
-              padding-top: 100px;
-              padding-bottom: 50px;
+          .ultimate-features-advantages__item_cloud-storage {
+            background: url(../img/ultimate-features/cloud-storage.png) center top no-repeat;
+          }
 
-              .ultimate-features-advantages__title {
-                font-size: 20px;
-                line-height: 58px;
-                font-weight: 700;
-                color: #242f51;
-              }
+          .ultimate-features-advantages__item_customer-support {
+            background: url(../img/ultimate-features/customer-support.png) center top no-repeat;
+          }
 
-              .ultimate-features-advantages__text {
-                line-height: 26px;
-              }
-
-            }
-
-            .ultimate-features-advantages__item_app-development {
-              background: url(../img/ultimate-features/app-development.png) center top no-repeat;
-            }
-
-            .ultimate-features-advantages__item_ux-planing {
-              background: url(../img/ultimate-features/ux-planing.png) center top no-repeat;
-            }
-
-            .ultimate-features-advantages__item_cloud-storage {
-              background: url(../img/ultimate-features/cloud-storage.png) center top no-repeat;
-            }
-
-            .ultimate-features-advantages__item_customer-support {
-              background: url(../img/ultimate-features/customer-support.png) center top no-repeat;
-            }
-
-            .ultimate-features-advantages__btn {
-              @extend %button;
-              margin: 0 auto;
-            }
-
+          .ultimate-features-advantages__btn {
+            @extend %button;
+            margin: 0 auto;
           }
 
         }
 
       }
+
+    }
 
   }
 
@@ -1728,6 +1728,144 @@
   .faq-wrap {
     padding-top: 100px; /* DESKTOP */
     padding-bottom: 100px; /* DESKTOP */
+  }
+
+}
+
+
+/* --------- Download --------- */
+.download-wrap {
+  width: 100%;
+  max-width: 1590px;
+  margin: 0 auto;
+  position: relative;
+
+  .download__img {
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .download__block-wrap {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    color: #616368;
+
+    .download__block {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+
+      .download__content {
+        padding: 0 15px;
+        text-align: center;
+
+        .download__title {
+          font-size: 28px;
+          line-height: 33px;
+          font-weight: 700;
+          color: #242f51;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
+        .download__text {
+          line-height: 26px;
+          padding-bottom: 50px;
+        }
+
+        .download__btns {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr;
+          justify-items: center;
+          grid-row-gap: 18%;
+          height: 134px;
+          margin-bottom: 50px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 800px */
+@include respond-to('minW-800px') {
+  /* --------- Download --------- */
+  .download-wrap {
+    width: 100%;
+    max-width: 1590px;
+    margin: 0 auto;
+    position: relative; /* DESKTOP */
+
+    .download__img {
+      overflow: hidden;
+      position: absolute;
+      top: 20%;
+      right: 0;
+      width: 50%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+    }
+
+    .download__block-wrap {
+      width: 100%;
+      max-width: 1070px;
+      margin: 0 auto;
+      color: #616368;
+
+      .download__block {
+        display: grid;
+        grid-template-rows: 1fr; /* DESKTOP */
+        grid-template-columns: 1fr 1fr; /* DESKTOP */
+
+        .download__content {
+          padding: 0 15px;
+          text-align: center;
+
+          .download__title {
+            font-size: 48px; /* DESKTOP */
+            line-height: 58px;
+            font-weight: 700;
+            color: #242f51;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
+          .download__text {
+            line-height: 26px;
+            padding-bottom: 50px;
+          }
+
+          .download__btns {
+            display: grid;
+            grid-template-rows: 1fr; /* DESKTOP */
+            grid-template-columns: 1fr 1fr; /* DESKTOP */
+            grid-column-gap: 8%; /* DESKTOP */
+            justify-items: center;
+            grid-row-gap: 18%;
+            height: 55px; /* DESKTOP */
+            margin-bottom: 0; /* DESKTOP */
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
 }
