@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Frequently Asked Questions - Min-Width 800px */
 /* --------- Download --------- */
 /* Download - Min-Width 800px */
+/* --------- Footer --------- */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -1399,5 +1400,78 @@ body {
   /* --------- Download --------- */
   .download-wrap .download__block-wrap {
     padding-left: 10%;
+  }
+}
+/* --------- Footer --------- */
+.footer-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #09142e;
+  position: relative;
+}
+.footer-wrap .footer__img {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer-wrap .footer__img img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-wrap .footer {
+  display: grid;
+  grid-template: 30% 30% 30% 10%/100%;
+  justify-items: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.footer-wrap .footer__logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fcae61;
+  padding-bottom: 50px;
+}
+.footer-wrap .footer__logo span {
+  color: #242f51;
+}
+.footer-wrap .footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.footer-wrap .footer .footer-nav__item {
+  line-height: 30px;
+  color: #fff;
+  padding: 0 10px;
+}
+.footer-wrap .footer .footer-social {
+  display: grid;
+  grid-template: 1fr/repeat(4, 1fr);
+  padding-bottom: 50px;
+}
+.footer-wrap .footer .footer-social__item {
+  font-size: 30px;
+  color: #273043;
+  padding: 0 8px;
+}
+.footer-wrap .footer .footer-social__item:hover {
+  color: #fff;
+  transition: color 0.3s;
+}
+.footer-wrap .footer .copy {
+  font-size: 14px;
+  line-height: 23px;
+  color: #fff;
+  text-align: center;
+  opacity: 21%;
+}
+
+/* Min-Width 800px */
+@media (min-width: 800px) {
+  /* --------- Footer --------- */
+  .footer-wrap .footer__img {
+    width: 50%;
   }
 }
