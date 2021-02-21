@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 /* --------- Awesome Features --------- */
 /* --------- Client Satisfaction --------- */
 /* --------- Frequently Asked Questions --------- */
+/* Frequently Asked Questions - Min-Width 800px */
+/* --------- Download --------- */
+/* Download - Min-Width 800px */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -1318,7 +1321,6 @@ body {
   width: 100%;
   max-width: 1590px;
   margin: 0 auto;
-  position: relative;
 }
 .download-wrap .download__img {
   overflow: hidden;
@@ -1329,26 +1331,20 @@ body {
 }
 .download-wrap .download__block-wrap {
   width: 100%;
-  max-width: 1070px;
   margin: 0 auto;
   color: #616368;
 }
-.download-wrap .download__block-wrap .download__block {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-}
 .download-wrap .download__block-wrap .download__block .download__content {
   padding: 0 15px;
-  text-align: center;
+  text-align: left;
 }
 .download-wrap .download__block-wrap .download__block .download__content .download__title {
   font-size: 28px;
   line-height: 33px;
   font-weight: 700;
   color: #242f51;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .download-wrap .download__block-wrap .download__block .download__content .download__text {
   line-height: 26px;
@@ -1363,71 +1359,45 @@ body {
   height: 134px;
   margin-bottom: 50px;
 }
+.download-wrap .download__block-wrap .download__block .download__content .download__btns img {
+  cursor: pointer;
+}
 
 /* Min-Width 800px */
 @media (min-width: 800px) {
   /* --------- Download --------- */
   .download-wrap {
-    width: 100%;
-    max-width: 1590px;
-    margin: 0 auto;
-    position: relative;
-    /* DESKTOP */
-  }
-  .download-wrap .download__img {
-    overflow: hidden;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    width: 50%;
-  }
-  .download-wrap .download__img img {
-    max-width: 100%;
-    height: auto;
+    display: grid;
+    grid-template: 100%/49% 50%;
+    grid-column-gap: 1%;
+    justify-items: end;
+    align-items: end;
   }
   .download-wrap .download__block-wrap {
-    width: 100%;
-    max-width: 1070px;
-    margin: 0 auto;
-    color: #616368;
-  }
-  .download-wrap .download__block-wrap .download__block {
-    display: grid;
-    grid-template-rows: 1fr;
-    /* DESKTOP */
-    grid-template-columns: 1fr 1fr;
-    /* DESKTOP */
-  }
-  .download-wrap .download__block-wrap .download__block .download__content {
-    padding: 0 15px;
-    text-align: center;
+    padding-bottom: 6%;
   }
   .download-wrap .download__block-wrap .download__block .download__content .download__title {
     font-size: 48px;
-    /* DESKTOP */
     line-height: 58px;
-    font-weight: 700;
-    color: #242f51;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .download-wrap .download__block-wrap .download__block .download__content .download__text {
-    line-height: 26px;
-    padding-bottom: 50px;
   }
   .download-wrap .download__block-wrap .download__block .download__content .download__btns {
-    display: grid;
-    grid-template-rows: 1fr;
-    /* DESKTOP */
-    grid-template-columns: 1fr 1fr;
-    /* DESKTOP */
-    grid-column-gap: 8%;
-    /* DESKTOP */
-    justify-items: center;
-    grid-row-gap: 18%;
-    height: 55px;
-    /* DESKTOP */
-    margin-bottom: 0;
-    /* DESKTOP */
+    grid-template: 50% 50%/100%;
+    grid-row-gap: 25%;
+    height: initial;
+  }
+}
+/* Min-Width 900px */
+@media (min-width: 900px) {
+  /* --------- Download --------- */
+  .download-wrap .download__block-wrap .download__block .download__content .download__btns {
+    grid-template: 100%/repeat(2, 215px);
+    justify-content: center;
+  }
+}
+/* Min-Width 1200px */
+@media (min-width: 1200px) {
+  /* --------- Download --------- */
+  .download-wrap .download__block-wrap {
+    padding-left: 10%;
   }
 }

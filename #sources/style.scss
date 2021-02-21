@@ -1705,8 +1705,8 @@
       text-align: left;
 
       &__title {
-        font-size: 40px;
-        line-height: 58px;
+        font-size: $faqTitle-fontSize800;
+        line-height: $faqTitle-lineHeight800;
         padding-bottom: 30px;
       }
 
@@ -1738,7 +1738,6 @@
   width: 100%;
   max-width: 1590px;
   margin: 0 auto;
-  position: relative;
 
   .download__img {
     overflow: hidden;
@@ -1752,30 +1751,26 @@
 
   .download__block-wrap {
     width: 100%;
-    max-width: 1070px;
     margin: 0 auto;
-    color: #616368;
+    color: $downloadBlockWrap-color;
 
     .download__block {
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr;
 
       .download__content {
         padding: 0 15px;
-        text-align: center;
+        text-align: $downloadContent-textAlign;
 
         .download__title {
-          font-size: 28px;
-          line-height: 33px;
-          font-weight: 700;
-          color: #242f51;
-          padding-top: 50px;
-          padding-bottom: 50px;
+          font-size: $downloadTitle-fontSize;
+          line-height: $downloadTitle-lineHeight;
+          font-weight: $downloadTitle-fontWeight;
+          color: $downloadTitle-color;
+          padding-top: 40px;
+          padding-bottom: 40px;
         }
 
         .download__text {
-          line-height: 26px;
+          line-height: $downloadText-lineHeight;
           padding-bottom: 50px;
         }
 
@@ -1787,6 +1782,11 @@
           grid-row-gap: 18%;
           height: 134px;
           margin-bottom: 50px;
+
+          img {
+            cursor: pointer;
+          }
+
         }
 
       }
@@ -1801,63 +1801,29 @@
 @include respond-to('minW-800px') {
   /* --------- Download --------- */
   .download-wrap {
-    width: 100%;
-    max-width: 1590px;
-    margin: 0 auto;
-    position: relative; /* DESKTOP */
-
-    .download__img {
-      overflow: hidden;
-      position: absolute;
-      top: 20%;
-      right: 0;
-      width: 50%;
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-    }
+    display: grid;
+    grid-template: 100%/49% 50%;
+    grid-column-gap: 1%;
+    justify-items: end;
+    align-items: end;
 
     .download__block-wrap {
-      width: 100%;
-      max-width: 1070px;
-      margin: 0 auto;
-      color: #616368;
+      padding-bottom: 6%;
 
       .download__block {
-        display: grid;
-        grid-template-rows: 1fr; /* DESKTOP */
-        grid-template-columns: 1fr 1fr; /* DESKTOP */
+
 
         .download__content {
-          padding: 0 15px;
-          text-align: center;
 
           .download__title {
-            font-size: 48px; /* DESKTOP */
-            line-height: 58px;
-            font-weight: 700;
-            color: #242f51;
-            padding-top: 50px;
-            padding-bottom: 50px;
-          }
-
-          .download__text {
-            line-height: 26px;
-            padding-bottom: 50px;
+            font-size: $downloadTitle-fontSize800;
+            line-height: $downloadTitle-lineHeight800;
           }
 
           .download__btns {
-            display: grid;
-            grid-template-rows: 1fr; /* DESKTOP */
-            grid-template-columns: 1fr 1fr; /* DESKTOP */
-            grid-column-gap: 8%; /* DESKTOP */
-            justify-items: center;
-            grid-row-gap: 18%;
-            height: 55px; /* DESKTOP */
-            margin-bottom: 0; /* DESKTOP */
+            grid-template: 50% 50%/100%;
+            grid-row-gap: 25%;
+            height: initial;
           }
 
         }
@@ -1869,3 +1835,140 @@
   }
 
 }
+
+/* Min-Width 900px */
+@include respond-to('minW-900px') {
+  /* --------- Download --------- */
+  .download-wrap {
+
+    .download__block-wrap {
+
+      .download__block {
+
+        .download__content {
+
+          .download__btns {
+            grid-template: 100% / repeat(2, 215px);
+            justify-content: center;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* Min-Width 1200px */
+@include respond-to('minW-1200px') {
+  /* --------- Download --------- */
+  .download-wrap {
+
+    .download__block-wrap {
+      padding-left: 10%;
+    }
+
+  }
+
+}
+
+
+// /* --------- Footer --------- */
+// .footer-wrap {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+//   background-color: $footerWrap-bgc;
+//   position: relative;
+// 
+//   .footer__img {
+//     overflow: hidden;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//     }
+//
+//   }
+//
+//   .footer {
+//     display: grid;
+//     grid-template: 30% 30% 30% 10% / 100%;
+//     justify-items: center;
+//     align-items: center;
+//     padding: 50px 0;
+//
+//     &__logo {
+//       font-size: $footerLogo-fontSize;
+//       font-weight: $footerLogo-fontWeight;
+//       color: $footerLogo-color;
+//       padding-bottom: 50px;
+//
+//       span {
+//         color: $footerLogoSpan-color;
+//       }
+//
+//     }
+//
+//     .footer-nav {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       padding-bottom: 50px;
+//
+//       &__item {
+//         line-height: $footerNavItem-lineHeight;
+//         color: $footerNavItem-color;
+//         padding: 0 10px;
+//       }
+//
+//     }
+//
+//     .footer-social {
+//       display: grid;
+//       grid-template: 1fr / repeat(4, 1fr);
+//       padding-bottom: 50px;
+//
+//       &__item {
+//         font-size: $footerSocialItem-fontSize;
+//         color: $footerSocialItem-color;
+//         padding: 0 8px;
+//
+//         &:hover {
+//           color: $footerSocialItemHover-color;
+//           transition: color .3s;
+//         }
+//
+//       }
+//
+//     }
+//
+//     .copy {
+//       font-size: $copy-fontSize;
+//       line-height: $copy-lineHeight;
+//       color: $copy-color;
+//       text-align: $copy-textAlign;
+//       opacity: $copy-opacity;
+//     }
+//
+//   }
+//
+// }
+//
+// /* Min-Width 800px */
+// @include respond-to('minW-800px') {
+//   /* --------- Footer --------- */
+//   .footer-wrap {
+//
+//     .footer__img {
+//       width: 50%;
+//     }
+//
+//   }
+//
+// }
