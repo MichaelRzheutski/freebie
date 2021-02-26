@@ -2,37 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Freebie</title>
 </head>
 <body>
 
 <!-- Header -->
-<header class="header">
-  <div class="container">
+<header class="header" id="header">
+  <div class="header__elements">
 
-    <div class="logo-nav">
-      <a href="#" class="logo-nav__logo">App<span>Lab</span></a>
+      <div class="nav-wrap" id="nav-wrap">
+        <div class="logo-nav" id="logo-nav">
+          <a href="#" class="logo-nav__logo">App<span>Lab</span></a>
 
-      <nav class="logo-nav__nav" id="nav">
-        <a href="#" class="nav__item">Home</a>
-        <a href="#" class="nav__item">Key Features</a>
-        <a href="#" class="nav__item">Pricing</a>
-        <a href="#" class="nav__item">Testimonial</a>
-        <a href="#" class="nav__item">FAQ</a>
-        <a href="#" class="nav__item current">Try For Free</a>
-      </nav>
+          <nav class="logo-nav__nav" id="nav">
+            <a href="#" class="nav__item" data-scroll="#header"><span>Home</span></a>
+            <a href="#" class="nav__item" data-scroll="#key-features"><span>Key Features</span></a>
+            <a href="#" class="nav__item" data-scroll="#pricing"><span>Pricing</span></a>
+            <a href="#" class="nav__item" data-scroll="#testimonial"><span>Testimonial</span></a>
+            <a href="#" class="nav__item" data-scroll="#faq"><span>FAQ</span></a>
+            <a href="#" class="nav__item current" data-scroll="#try">Try For Free</a>
+          </nav>
 
-      <button class="nav-toggle" id="nav-toggle" type="button">
-        <span class="nav-toggle__item">Menu</span>
-      </button>
-    </div>
-  </div> <!-- /.container -->
+          <button class="nav-toggle" id="nav-toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
+        </div>
+      </div>
 
+  </div> <!-- /.header__elements -->
   <div class="header-text-wrap">
     <div class="container">
 
@@ -195,11 +198,12 @@
   <div class="container">
 
     <div class="why-choose">
-
+    <div>
       <h2 class="why-choose__title">Why you should choose our app</h2>
       <p class="why-choose__text">
         The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
       </p>
+    </div>
 
       <div class="why-choose-advantages">
 
@@ -248,7 +252,7 @@
 </section>
 
 <!-- Ultimate Features -->
-<section class="ultimate-features-section">
+<section class="ultimate-features-section" id="key-features">
 
   <div class="ultimate-features__phone">
     <img src="img/ultimate-features/ultimate-features.png" alt="Ultimate Features">
@@ -291,7 +295,7 @@
             </p>
           </div>
 
-          <a class="ultimate-features-advantages__btn" href="#">Learn more</a>
+          <a class="ultimate-features-advantages__btn" href="#">See all</a>
         </div> <!-- /.ultimate-features-advantages -->
       </div> <!-- /.ultimate-features-content -->
 
@@ -301,7 +305,7 @@
 </section>
 
 <!-- Awesome Features -->
-<section class="awesome-features-wrap">
+<section class="awesome-features-wrap" id="pricing">
   <div class="container">
 
     <div class="awesome-features">
@@ -311,62 +315,100 @@
         <div>
           The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
         </div>
-        <div class="toggleWrapper">
-          <input type="checkbox" id="dn" class="dn">
-          <label for="dn" class="toggle"><span class="toggle__handler"></span></label>
-        </div>
+      </div>
+
+      <div class="toggleWrapper">
+        <input type="checkbox" id="dn" class="dn" onclick="priceSwitch();">
+        <label for="dn" class="toggle"><span class="toggle__handler"></span></label>
       </div>
 
       <div class="prices">
         <div class="prices__item">
-          <div class="prices__header">
-            <div class="prices__price"><span>$0</span>/ month</div>
-            <div class="prices__plan">
-              <span>Business Class</span><br>
-              For small teams or office
-            </div>
-          </div>
-          <div class="prices__footer">
-            <div class="prices__text">
-              Drag & Drop Builder <br>
-              1,000's of Templates <br>
-              Blog Support Tools <br>
-              eCommerce Store <br>
-            </div>
-            <a class="prices__btn" href="#">Start free trial</a>
-          </div>
-        </div>
 
-        <div class="prices__item prices__item_active">
-          <div class="prices__header">
-            <div class="prices__price"><span>$99</span>/ month</div>
-            <div class="prices__plan">
-              <span>Pro Master</span><br>
-              For Best opportunities
+          <div class="prices__shadow">
+            <div class="prices__first">
+              <div class="prices__price">
+                <div class="text1">
+                  <span class="price-num">$0</span>
+                  <span class="price-period">/ month </span>
+                </div>
+                <div class="text2">
+                  <span class="price-num">$99</span>
+                  <span class="price-period">/ month </span>
+                </div>
+              </div>
+              <div class="prices__plan">
+                <span>Business Class</span><br>
+                For small teams or office
+              </div>
             </div>
-          </div>
-          <div class="prices__footer">
-            <div class="prices__text">
-              Drag & Drop Builder <br>
-              1,000's of Templates <br>
-              Blog Support Tools <br>
-              eCommerce Store <br>
+
+            <div class="prices__second">
+              <div class="prices__text">
+                Drag & Drop Builder <br>
+                1,000's of Templates <br>
+                Blog Support Tools <br>
+                eCommerce Store <br>
+              </div>
             </div>
-            <a class="prices__btn" href="#">Subscribe Now</a>
-            <div class="prices__free-trial">Or Start 14 days trial</div>
+
+            <div class="prices__third">
+              <a class="prices__btn" href="#">Start free trial</a>
+            </div>
+          </div> <!-- /.prices__shadow -->
+
+          <div class="prices__fourth">
+            <div class="prices__free-trial"> <a href="#">Or Start 14 days trial</a></div>
           </div>
-        </div>
+        </div> <!-- /.prices__item -->
+
+        <div class="prices__item">
+
+          <div class="prices__shadow">
+            <div class="prices__first">
+              <div class="prices__price">
+                <div class="text1">
+                  <span class="price-num">$99</span>
+                  <span class="price-period">/ month </span>
+                </div>
+                <div class="text2">
+                  <span class="price-num">$199</span>
+                  <span class="price-period">/ month </span>
+                </div>
+              </div>
+              <div class="prices__plan">
+                <span>Pro Master</span><br>
+                For Best opportunities
+              </div>
+            </div>
+
+            <div class="prices__second">
+              <div class="prices__text">
+                Drag & Drop Builder <br>
+                1,000's of Templates <br>
+                Blog Support Tools <br>
+                eCommerce Store <br>
+              </div>
+            </div>
+
+            <div class="prices__third">
+              <a class="prices__btn" href="#">Subscribe Now</a>
+            </div>
+          </div> <!-- /.prices__shadow -->
+
+          <div class="prices__fourth">
+            <div class="prices__free-trial"> <a href="#">Or Start 14 days trial</a></div>
+          </div>
+        </div> <!-- /.prices__item -->
+
       </div> <!-- /.prices -->
-
     </div> <!-- /.awesome-features -->
-
-
 
   </div> <!-- /.container -->
 </section>
 
 <!-- Client Satisfaction -->
-<section class="client-satisfaction-wrap">
+<section class="client-satisfaction-wrap" id="testimonial">
     <div class="client-satisfaction">
 
       <div class="client-satisfaction__clients">
@@ -395,22 +437,25 @@
         </div>
 
         <div class="testimonial">
+          <div class="slider-wrap" data-slider>
 
-          <div class="testimonial__img">
-            <img src="img/clients/testimonial.png" alt="Testimonial">
+            <div class="testimonial__item">
+              <img class="testimonial__img" src="img/clients/testimonial.png" alt="Testimonial">
+              <div class="testimonial__person">
+                <div class="testimonial__name">Zoltan Nemeth</div>
+                <div class="testimonial__position">CEO of Pixler Lab</div>
+              </div>
+            </div>
+
+            <div class="testimonial__item">
+              <img class="testimonial__img" src="img/clients/testimonial.png" alt="Testimonial">
+              <div class="testimonial__person">
+                <div class="testimonial__name">Zoltan Nemeth</div>
+                <div class="testimonial__position">CEO of Pixler Lab</div>
+              </div>
+            </div>
+
           </div>
-
-          <div class="testimonial__person">
-            <div class="testimonial__name">Zoltan Nemeth</div>
-            <div class="testimonial__position">CEO of Pixler Lab</div>
-          </div>
-
-          <div class="testimonial__arrows">
-            <span class="arrows__left"></span>
-            <span class="arrows__center">|</span>
-            <span class="arrows__right"></span>
-          </div>
-
         </div> <!-- /.testimonial -->
 
       </div> <!-- /.client-feedback -->
@@ -422,7 +467,7 @@
 <section class="faq-wrap">
   <div class="container">
 
-    <div class="faq">
+    <div class="faq" id="faq">
       <h2 class="faq__title">Frequently asked questions</h2>
       <p class="faq__text">
         The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
@@ -478,7 +523,7 @@
 </section>
 
 <!-- Download -->
-<section class="download-wrap">
+<section class="download-wrap" id="try">
 
     <div class="download__block-wrap">
       <div class="download__block">
@@ -510,11 +555,11 @@
       <a href="#" class="footer__logo">App<span>Lab</span></a>
 
       <div class="footer-nav">
-        <a href="#" class="footer-nav__item">Home</a>
-        <a href="#" class="footer-nav__item">Key Features</a>
-        <a href="#" class="footer-nav__item">Pricing</a>
-        <a href="#" class="footer-nav__item">Testimonial</a>
-        <a href="#" class="footer-nav__item">FAQ</a>
+        <a href="#" class="footer-nav__item" data-scroll="#header"><span>Home</span></a>
+        <a href="#" class="footer-nav__item" data-scroll="#key-features"><span>Key Features</span></a>
+        <a href="#" class="footer-nav__item" data-scroll="#pricing"><span>Pricing</span></a>
+        <a href="#" class="footer-nav__item" data-scroll="#testimonial"><span>Testimonial</span></a>
+        <a href="#" class="footer-nav__item" data-scroll="#faq"><span>FAQ</span></a>
       </div>
 
       <div class="footer-social">
@@ -543,8 +588,13 @@
 
 </footer>
 
+<!-- Back To Top Button -->
+<a class="to-top" id="to-top"></a>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/e05cfcce04.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

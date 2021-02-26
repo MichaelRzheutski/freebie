@@ -2,6 +2,8 @@
 body {
   font-family: $body-fontFamily;
   font-size: $body-fontSize;
+  color: $body-color;
+  overflow-x: hidden;
 }
 
 .container {
@@ -24,6 +26,45 @@ body {
 
   &:hover {
     color: $buttonHover-color;
+    background-color: $buttonHover-bgc;
+    transition: background-color .2s;
   }
 
+}
+
+// Mobile Headers
+%mobile-headers {
+  font-size: $mobileHeaders-fontSize;
+  font-weight: $mobileHeaders-fontWeight;
+  line-height: $mobileHeaders-lineHeight;
+  color: $mobileHeaders-color;
+}
+
+// Logo
+%logo {
+  font-size: $logo-fontSize;
+  line-height: $logo-lineHeight;
+  font-weight: $logo-fontWeight;
+  color: $logo-color;
+
+  span {
+    color: $logoSpan-color;
+  }
+
+}
+
+// Awesome Apps & Smart Jackpots titles
+%awesomeApps-smartJackpots-titles {
+  font-size: $awesomeAppsSmartJackpotsTitles-fontSize;
+  font-weight: $awesomeAppsSmartJackpotsTitles-fontWeight;
+  line-height: $awesomeAppsSmartJackpotsTitles-lineHeight;
+}
+
+// Why Choose & Ultimate Features advantages titles
+%whyChoose-UltimateFeatures-AT {
+  font-Size: $whyChoose-UltimateFeatures-AT-fontSize;
+  line-height: $whyChoose-UltimateFeatures-AT-lineHeight;
+  font-weight: $whyChoose-UltimateFeatures-AT-fontWeight;
+  color: $whyChoose-UltimateFeatures-AT-color;
+  text-align: $whyChoose-UltimateFeatures-AT-textAlign;
 }
