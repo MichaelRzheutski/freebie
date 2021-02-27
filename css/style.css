@@ -1500,6 +1500,11 @@ body {
 }
 .download-wrap .download__block-wrap .download__block .download__content .download__btns img {
   cursor: pointer;
+  opacity: 0.8;
+}
+.download-wrap .download__block-wrap .download__block .download__content .download__btns img:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .download-wrap .download__block-wrap .download__block .download__content .download__btns > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -1535,13 +1540,6 @@ body {
     grid-template: 50% 50%/100%;
     grid-row-gap: 25%;
     height: initial;
-  }
-  .download-wrap .download__block-wrap .download__block .download__content .download__btns img {
-    opacity: 0.8;
-  }
-  .download-wrap .download__block-wrap .download__block .download__content .download__btns img:hover {
-    opacity: 1;
-    transition: opacity 0.3s;
   }
 }
 /* Min-Width 900px */

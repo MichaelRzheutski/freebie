@@ -2327,6 +2327,13 @@
 
           img {
             cursor: pointer;
+            opacity: 0.8;
+
+            &:hover {
+              opacity: 1;
+              transition: opacity .3s;
+            }
+
           }
 
         }
@@ -2383,17 +2390,6 @@
                 grid-template: 50% 50%/100%;
             grid-row-gap: 25%;
             height: initial;
-
-            img {
-              opacity: 0.8;
-
-              &:hover {
-                opacity: 1;
-                transition: opacity .3s;
-              }
-
-            }
-
           }
 
         }
