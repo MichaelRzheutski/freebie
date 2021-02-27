@@ -3,298 +3,293 @@ $body-fontFamily: 'Poppins', sans-serif;
 $body-fontSize: 16px;
 $body-color: #616368;
 
-// Separator
-$separator-borderBottom: 1px solid #f4f4f4;
+  // Separator
+    $separator-borderBottom: 1px solid #f4f4f4;
 
-// Button Template
-$button-bgc: #2500f9;
-$button-color: #fff;
-$button-fontWeight: 700;
-$button-lineHeight: 57px;
-$button-bdrs: 30px;
+  // Button Template
+    $button-bgc: #2500f9;
+    $button-color: #fff;
+    $button-fontWeight: 700;
+    $button-lineHeight: 57px;
+    $button-bdrs: 30px;
 
-$buttonHover-color: #fff;
-$buttonHover-bgc: #242f51;
+    $buttonHover-color: #fff;
+    $buttonHover-bgc: #242f51;
 
-// Mobile Headers
-$mobileHeaders-fontSize: 32px;
-$mobileHeaders-fontWeight: 700;
-$mobileHeaders-lineHeight: 45px;
-$mobileHeaders-color: #242f51;
+  // Mobile Headers
+    $mobileHeaders-fontSize: 32px;
+    $mobileHeaders-fontWeight: 700;
+    $mobileHeaders-lineHeight: 45px;
+    $mobileHeaders-color: #242f51;
 
-// Logo
-$logo-fontSize: 33px;
-$logo-lineHeight: 44px;
-$logo-fontWeight: 700;
-$logo-color: #fcae61;
+  // Logo
+    $logo-fontSize: 33px;
+    $logo-lineHeight: 44px;
+    $logo-fontWeight: 700;
+    $logo-color: #fcae61;
 
-$logoSpan-color: #242f51;
+    $logoSpan-color: #242f51;
 
-// Awesome Apps & Smart Jackpots titles
-$awesomeAppsSmartJackpotsTitles-fontSize: 20px;
-$awesomeAppsSmartJackpotsTitles-fontWeight: 700;
-$awesomeAppsSmartJackpotsTitles-lineHeight: 58px;
+  // Awesome Apps & Smart Jackpots titles
+    $awesomeAppsSmartJackpotsTitles-fontSize: 20px;
+    $awesomeAppsSmartJackpotsTitles-fontWeight: 700;
+    $awesomeAppsSmartJackpotsTitles-lineHeight: 58px;
 
-// Why Choose & Ultimate Features advantages titles
-$whyChoose-UltimateFeatures-AT-fontSize: 20px;
-$whyChoose-UltimateFeatures-AT-lineHeight: 58px;
-$whyChoose-UltimateFeatures-AT-fontWeight: 700;
-$whyChoose-UltimateFeatures-AT-color: #242f51;
-$whyChoose-UltimateFeatures-AT-textAlign: center;
-
-
-
+  // Why Choose & Ultimate Features advantages titles
+    $whyChoose-UltimateFeatures-AT-fontSize: 20px;
+    $whyChoose-UltimateFeatures-AT-lineHeight: 58px;
+    $whyChoose-UltimateFeatures-AT-fontWeight: 700;
+    $whyChoose-UltimateFeatures-AT-color: #242f51;
+    $whyChoose-UltimateFeatures-AT-textAlign: center;
 
 
 // --------- Header --------- //
 
-// Navigation
-$navItem-color: #fff;
-$navItem-lineHeight: 2.5em;
-$navItem-bgc: #242f51;
+  // Navigation
+    $navItem-color: #fff;
+    $navItem-lineHeight: 2.5em;
+    $navItem-bgc: #242f51;
 
-$navItemHover-bgc: #2500f9;
+    $navItemHover-bgc: #2500f9;
 
-$navToggleItem-bgc: #242f51;
-$navToggleBeforeAfter-bgc: #242f51;
+    $navToggleItem-bgc: #242f51;
+    $navToggleBeforeAfter-bgc: #242f51;
 
-$navWrapFixed-bgc: #fff;
-$navWrapFixed-color: #fff;
-$navWrapFixedNavItemHoverSpanAfter-bgc: #fff;
+    $navWrapFixed-bgc: #fff;
+    $navWrapFixed-color: #fff;
+    $navWrapFixedNavItemHoverSpanAfter-bgc: #fff;
 
-// Navigation - Min-Width 900px
-$navItem-lineHeight900: 57px;
-$navItem-color900: #242f51;
-$navItem-bg900: none;
+    // Navigation - Min-Width 900px
+      $navItem-900-lineHeight: 57px;
+      $navItem-900-color: #242f51;
+      $navItem-900-bg: none;
 
-$navItemHover-bg900: none;
+      $navItemHover-bg900: none;
 
-$current-bgc: #2500f9;
-$current-color: #fff;
-$current-fontWeight: 700;
-$current-bdrs: 20px;
+      $current-bgc: #2500f9;
+      $current-color: #fff;
+      $current-fontWeight: 700;
+      $current-bdrs: 20px;
 
-$navWrapFixedNavItemHoverSpanAfter-bgc: #242f51;
+      $navWrapFixedNavItemHoverSpanAfter-bgc: #242f51;
 
-// Header Text
-$headerTextBlockEditorsChoice-bgc: #e2eaed;
-$headerTextBlockEditorsChoice-fontSize: 14px;
-$headerTextBlockEditorsChoice-lineHeight: 37px;
-$headerTextBlockEditorsChoice-bdrs: 20px;
+  // Header Text
+    $headerTextBlockEditorsChoice-bgc: #e2eaed;
+    $headerTextBlockEditorsChoice-fontSize: 14px;
+    $headerTextBlockEditorsChoice-lineHeight: 37px;
+    $headerTextBlockEditorsChoice-bdrs: 20px;
 
-$headerTextBlockSlogan-lineHeight: 26px;
+    $headerTextBlockSlogan-lineHeight: 26px;
 
-$demoWrapWatchDemo-color: #2500f9;
+    $demoWrapWatchDemo-color: #2500f9;
 
-// Header Text - Min-Width 800px
-$headerTextBlockEditorsChoice800-fontSize: 18px;
+    // Header Text - Min-Width 800px
+      $headerTextBlockEditorsChoice-800-fontSize: 18px;
 
-$headerTextBlockTitle800-fontSize: 58px;
-$headerTextBlockTitle800-lineHeight: 75px;
+      $headerTextBlockTitle-800-fontSize: 58px;
+      $headerTextBlockTitle-800-lineHeight: 75px;
 
-// Header Text - Min-Width 900px
-$headerTextBlockTitle900-fontSize: 60px;
+    // Header Text - Min-Width 900px
+      $headerTextBlockTitle-900-fontSize: 60px;
 
 
 // --------- Awesome Apps --------- //
-$advantagesText-lineHeight: 26px;
+  $advantagesText-lineHeight: 26px;
 
-$FPT-PT-VET-text-lineHeight: 26px;
+  $FPT-PT-VET-text-lineHeight: 26px;
 
-$FPT-color: #f55767;
+  $FPT-color: #f55767;
 
-$PT-color: #2563ff;
+  $PT-color: #2563ff;
 
-$VET-color: #40975f;
+  $VET-color: #40975f;
 
-// Awesome Apps - Min-Width 800px
-$advantagesTitle-fontSize800: 36px;
-$advantagesTitle-lineHeight800: 46px;
+  // Awesome Apps - Min-Width 800px
+    $advantagesTitle-800-fontSize: 36px;
+    $advantagesTitle-800-lineHeight: 46px;
 
-// Smart Jackpots
-$smartJackpotsSlogan-borderBottom: 1px solid #f4f4f4;
+// --------- Smart Jackpots --------- //
+  $smartJackpotsSlogan-borderBottom: 1px solid #f4f4f4;
 
-$smartJackpotsText-fontSize: 16px;
-$smartJackpotsText-lineHeight: 26px;
+  $smartJackpotsText-fontSize: 16px;
+  $smartJackpotsText-lineHeight: 26px;
 
-// Smart Jackpots - Min-Width 600px
-$smartJackpotsText-borderBottom600: none;
-$smartJackpotsText-borderRight600: 1px solid #b9b9b8;
+  // Smart Jackpots - Min-Width 600px
+    $smartJackpotsText-600-borderBottom: none;
+    $smartJackpotsText-600-borderRight: 1px solid #b9b9b8;
 
-// Smart Jackpots - Min-Width 800px
-$smartJackpotsSlogan-fontSize800: 40px;
-$smartJackpotsSlogan-fontWeight800: 700;
-$smartJackpotsSlogan-lineHeight800: 50px;
+  // Smart Jackpots - Min-Width 800px
+    $smartJackpotsSlogan-800-fontSize: 40px;
+    $smartJackpotsSlogan-800-fontWeight: 700;
+    $smartJackpotsSlogan-800-lineHeight: 50px;
 
 
-// --------- Automatic Payouts ---------
-$APT-color: #f55767;
+// --------- Automatic Payouts --------- //
+  $APT-color: #f55767;
 
-$NET-color: #2563ff;
+  $NET-color: #2563ff;
 
-$BRMT-color: #40975f;
+  $BRMT-color: #40975f;
 
-$APText-NEText-BRMText-lineHeight: 26px;
+  $APText-NEText-BRMText-lineHeight: 26px;
 
-// Automatic Payouts - Min-Width 600px
-$APT-NET-BRMT-lineHeight600: 30px;
+  // Automatic Payouts - Min-Width 600px
+    $APT-NET-BRMT-600-lineHeight: 30px;
 
-// Automatic Payouts - Min-Width 800px
-$APT-NET-BRMT-lineHeight800: 58px;
+  // Automatic Payouts - Min-Width 800px
+    $APT-NET-BRMT-800-lineHeight: 58px;
 
 
 // --------- Designed --------- //
-$designedWrap-color: #242f51;
+  $designedWrap-color: #242f51;
 
-$designedContentText-lineHeight: 26px;
+  $designedContentText-lineHeight: 26px;
 
-// Designed - Min-Width 800px
-$designedContentTitle-fontSize800: 36px;
-$designedContentTitle-lineHeight800: 46px;
+  // Designed - Min-Width 800px
+    $designedContentTitle-800-fontSize: 36px;
+    $designedContentTitle-800-lineHeight: 46px;
 
 
 // --------- Why Choose --------- //
-$whyChooseText-lineHeight: 26px;
+  $whyChooseText-lineHeight: 26px;
 
-$whyChooseAdvantagesText-lineHeight: 26px;
-$whyChooseAdvantagesText-textAlign: center;
+  $whyChooseAdvantagesText-lineHeight: 26px;
+  $whyChooseAdvantagesText-textAlign: center;
 
-// Why Choose - Min-Width 800px
-$whyChooseTitle-fontSize800: 36px;
-$whyChooseTitle-lineHeight800: 46px;
+  // Why Choose - Min-Width 800px
+    $whyChooseTitle-800-fontSize: 36px;
+    $whyChooseTitle-800-lineHeight: 46px;
 
 
 // --------- Ultimate Features --------- //
-$ultimateFeaturesAdvantagesText-lineHeight: 26px;
+  $ultimateFeaturesAdvantagesText-lineHeight: 26px;
 
 
 // --------- Awesome Features --------- //
-$awesomeFeatures-textAlign: center;
+  $awesomeFeatures-textAlign: center;
 
-$awesomeFeaturesText-lineHeight: 26px;
+  $awesomeFeaturesText-lineHeight: 26px;
 
-$prices-color: #999ca5;
+  $prices-color: #999ca5;
 
-$pricesShadow-boxShadow: 0px 20px 20px 0px rgba(50, 50, 50, 0.15);
+  $pricesShadow-boxShadow: 0px 20px 20px 0px rgba(50, 50, 50, 0.15);
 
-$pricesFirst-bg: rgb(255,255,255);
-$pricesFirst-linearGradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,247,249,1) 100%);
-$pricesFirst-bdrs: 10px 10px 0 0;
+  $pricesFirst-bg: rgb(255,255,255);
+  $pricesFirst-linearGradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,247,249,1) 100%);
+  $pricesFirst-bdrs: 10px 10px 0 0;
 
-$pricesPrice-fontSize: 16px;
-$pricesPrice-lineHeight: 58px;
+  $pricesPrice-fontSize: 16px;
+  $pricesPrice-lineHeight: 58px;
 
-$pricesNum-fontSize: 60px;
-$pricesNum-fontWeight: 700;
-$pricesNum-color: #242f51;
+  $pricesNum-fontSize: 60px;
+  $pricesNum-fontWeight: 700;
+  $pricesNum-color: #242f51;
 
-$pricesPlan-lineHeight: 28px;
+  $pricesPlan-lineHeight: 28px;
 
-$pricesPlanSpan-fontSize: 20px;
-$pricesPlanSpan-fontWeight: 700;
-$pricesPlanSpan-color: #242f51;
+  $pricesPlanSpan-fontSize: 20px;
+  $pricesPlanSpan-fontWeight: 700;
+  $pricesPlanSpan-color: #242f51;
 
-$pricesSecond-bgc: #fff;
+  $pricesSecond-bgc: #fff;
 
-$pricesText-lineHeight: 48px;
+  $pricesText-lineHeight: 48px;
 
-$pricesThird-bgc: #fff;
+  $pricesThird-bgc: #fff;
 
-$pricesFreeTrial-color: #2500f9;
-$pricesFreeTrial-bgc: #fff;
-$pricesFreeTrial-bdrs: 0 0 10px 10px;
+  $pricesFreeTrial-color: #2500f9;
+  $pricesFreeTrial-bgc: #fff;
+  $pricesFreeTrial-bdrs: 0 0 10px 10px;
 
-$pricesItemHoverPricesItem-bgc: #ebebeb;
-$pricesItemHoverPricesItem-bdrs: 10px;
+  $pricesItemHoverPricesItem-bgc: #ebebeb;
+  $pricesItemHoverPricesItem-bdrs: 10px;
 
-$pricesItemHoverPricesShadow-boxShadow: none;
-$pricesItemHoverPricesShadow-transition: box-shadow .2s;
+  $pricesItemHoverPricesShadow-boxShadow: none;
+  $pricesItemHoverPricesShadow-transition: box-shadow .2s;
 
-// Awesome Features - Min-Width 600px
-$pricesPrice600-fontSize: 14px;
+  // Awesome Features - Min-Width 600px
+    $pricesPrice-600-fontSize: 14px;
 
-// Awesome Features - Min-Width 700px
-$pricesPrice700-fontSize: 18px;
+  // Awesome Features - Min-Width 700px
+    $pricesPrice-700-fontSize: 18px;
 
 // --------- Client Satisfaction --------- //
-$clientSatisfaction-textAlign: center;
+  $clientSatisfaction-textAlign: center;
 
-$userFriendlyText-lineHeight: 26px;
+  $userFriendlyText-lineHeight: 26px;
 
-$clientFeedbackRanking-fontSize: 20px;
-$clientFeedbackRankingCheked-color: orange;
+  $clientFeedbackRanking-fontSize: 20px;
+  $clientFeedbackRankingCheked-color: orange;
 
-$userFriendlyTitle-fontSize: 20px;
-$userFriendlyTitle-fontWeight: 700;
-$userFriendlyTitle-lineHeight: 26px;
-$userFriendlyTitle-color: #242f51;
+  $userFriendlyTitle-fontSize: 20px;
+  $userFriendlyTitle-fontWeight: 700;
+  $userFriendlyTitle-lineHeight: 26px;
+  $userFriendlyTitle-color: #242f51;
 
-$testimonialName-fontSize: 18px;
-$testimonialName-fontWeight: 700;
-$testimonialName-lineHeight: 35px;
-$testimonialName-color: #242f51;
+  $testimonialName-fontSize: 18px;
+  $testimonialName-fontWeight: 700;
+  $testimonialName-lineHeight: 35px;
+  $testimonialName-color: #242f51;
 
-// Client Satisfaction - Min-Width 900px
-$testimonialPerson900-textalign: left;
-
-$slickPrevAfter900-bgc: #e7e7e7;
+  // Client Satisfaction - Min-Width 900px
+    $testimonialPerson-900-textalign: left;
 
 // --------- Frequently Asked Questions --------- //
-$faqText-lineHeight: 26px;
+  $faqText-lineHeight: 26px;
 
-$accordionItem-bgc: #f5f7fa;
+  $accordionItem-bgc: #f5f7fa;
 
-$accordionTitle-fontSize: 20px;
-$accordionTitle-fontWeight: 700;
-$accordionTitle-lineHeight: 33px;
-$accordionTitle-color: #242f51;
+  $accordionTitle-fontSize: 20px;
+  $accordionTitle-fontWeight: 700;
+  $accordionTitle-lineHeight: 33px;
+  $accordionTitle-color: #242f51;
 
-$accordionTitleBefore-color: #242f51;
-$accordionTitleAfter-color: #242f51;
+  $accordionTitleBefore-color: #242f51;
+  $accordionTitleAfter-color: #242f51;
 
-$accordionContent-lineHeight: 26px;
+  $accordionContent-lineHeight: 26px;
 
-// Frequently Asked Questions - Min-Width 800px
-$faqTitle-fontSize800: 40px;
-$faqTitle-lineHeight800: 58px;
+  // Frequently Asked Questions - Min-Width 800px
+    $faqTitle-800-fontSize: 40px;
+    $faqTitle-800-lineHeight: 58px;
 
 
 // --------- Download --------- //
-$downloadContent-textAlign: left;
+  $downloadContent-textAlign: left;
 
-$downloadText-lineHeight: 26px;
+  $downloadText-lineHeight: 26px;
 
-// Download - Min-Width 800px
-$downloadTitle-fontSize800: 48px;
-$downloadTitle-lineHeight800: 58px;
+  // Download - Min-Width 800px
+    $downloadTitle-800-fontSize: 48px;
+    $downloadTitle-800-lineHeight: 58px;
 
-// --------- Footer ---------
-$footerWrap-bgc: #09142e;
+// --------- Footer --------- //
+  $footerWrap-bgc: #09142e;
 
-$footerNavItem-lineHeight: 30px;
-$footerNavItem-color: #fff;
+  $footerNavItem-lineHeight: 30px;
+  $footerNavItem-color: #fff;
 
-$footerSocialItem-fontSize: 30px;
-$footerSocialItem-color: #273043;
+  $footerSocialItem-fontSize: 30px;
+  $footerSocialItem-color: #273043;
 
-$footerSocialItemHover-color: #fff;
+  $footerSocialItemHover-color: #fff;
 
-$copy-fontSize: 14px;
-$copy-lineHeight: 23px;
-$copy-color: #fff;
-$copy-textAlign: center;
-$copy-opacity: 21%;
+  $copy-fontSize: 14px;
+  $copy-lineHeight: 23px;
+  $copy-color: #fff;
+  $copy-textAlign: center;
+  $copy-opacity: 21%;
 
-/* --------- Back To Top Button --------- */
-$toTop-bgc: #2500f9;
+// --------- Back To Top Button --------- //
+  $toTop-bgc: #2500f9;
 
-$toTopAfter-fontSize: 2em;
-$toTopAfter-lineHeight: 35px;
-$toTopAfter-color: #fff;
+  $toTopAfter-fontSize: 2em;
+  $toTopAfter-lineHeight: 35px;
+  $toTopAfter-color: #fff;
 
-$toTopHover-bgc: #00b076;
+  $toTopHover-bgc: #00b076;
 
-$toTopActive-bgc: #555;
+  $toTopActive-bgc: #555;
 
-// Back To Top Button - Min-Width 800px
-$toTopAfter-lineHeight900: 50px;
+  // Back To Top Button - Min-Width 800px
+    $toTopAfter-900-lineHeight: 50px;

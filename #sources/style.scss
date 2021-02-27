@@ -189,9 +189,9 @@
 
         .nav__item {
           display: inline-block;
-          line-height: $navItem-lineHeight900;
-          color: $navItem-color900;
-          background: $navItem-bg900;
+          line-height: $navItem-900-lineHeight;
+          color: $navItem-900-color;
+          background: $navItem-900-bg;
 
           &:hover {
             background: $navItemHover-bg900;
@@ -371,12 +371,12 @@
 
       .header-text-block__editors-choice {
         width: 367px;
-        font-size: $headerTextBlockEditorsChoice800-fontSize;
+        font-size: $headerTextBlockEditorsChoice-800-fontSize;
       }
 
       .header-text-block__title {
-        font-size: $headerTextBlockTitle800-fontSize;
-        line-height: $headerTextBlockTitle800-lineHeight;
+        font-size: $headerTextBlockTitle-800-fontSize;
+        line-height: $headerTextBlockTitle-800-lineHeight;
         text-align: left;
       }
 
@@ -406,7 +406,7 @@
     .header-text-phone {
 
       .header-text-block__title {
-        font-size: $headerTextBlockTitle900-fontSize;
+        font-size: $headerTextBlockTitle-900-fontSize;
       }
 
     }
@@ -568,8 +568,8 @@
       .awesome-apps__advantages {
 
         .advantages__title {
-          font-size: $advantagesTitle-fontSize800;
-          line-height: $advantagesTitle-lineHeight800;
+          font-size: $advantagesTitle-800-fontSize;
+          line-height: $advantagesTitle-800-lineHeight;
         }
 
         .fast-performance, .prototyping, .vector-editing {
@@ -597,7 +597,7 @@
 
 }
 
-/* Smart Jackpots */
+/* --------- Smart Jackpots --------- */
 .smart-jackpots-wrap {
   padding-top: 30px;
 
@@ -634,8 +634,8 @@
       align-items: flex-start;
 
       &__slogan {
-        border-bottom: $smartJackpotsText-borderBottom600;
-        border-right: $smartJackpotsText-borderRight600;
+        border-bottom: $smartJackpotsText-600-borderBottom;
+        border-right: $smartJackpotsText-600-borderRight;
 
         padding-right: 30px;
       }
@@ -658,9 +658,9 @@
     .smart-jackpots {
 
       &__slogan {
-        font-size: $smartJackpotsSlogan-fontSize800;
-        font-weight: $smartJackpotsSlogan-fontWeight800;
-        line-height: $smartJackpotsSlogan-lineHeight800;
+        font-size: $smartJackpotsSlogan-800-fontSize;
+        font-weight: $smartJackpotsSlogan-800-fontWeight;
+        line-height: $smartJackpotsSlogan-800-lineHeight;
 
         padding-right: 73px;
       }
@@ -762,7 +762,7 @@
       }
 
       .automatic-payouts__title, .network-effect__title, .bigger-rewards-method__title {
-        line-height: $APT-NET-BRMT-lineHeight600;
+        line-height: $APT-NET-BRMT-600-lineHeight;
         padding-bottom: 15px;
       }
 
@@ -793,7 +793,7 @@
       }
 
       .automatic-payouts__title, .network-effect__title, .bigger-rewards-method__title {
-        line-height: $APT-NET-BRMT-lineHeight800;
+        line-height: $APT-NET-BRMT-800-lineHeight;
 
         padding-bottom: 0;
       }
@@ -917,8 +917,8 @@
         .designed-content {
 
           .designed-content__title {
-            font-size: $designedContentTitle-fontSize800;
-            line-height: $designedContentTitle-lineHeight800;
+            font-size: $designedContentTitle-800-fontSize;
+            line-height: $designedContentTitle-800-lineHeight;
           }
 
         }
@@ -1029,8 +1029,8 @@
       grid-template-rows: repeat(2, 1fr);
 
       .why-choose__title {
-        font-size: $whyChooseTitle-fontSize800;
-        line-height: $whyChooseTitle-lineHeight800;
+        font-size: $whyChooseTitle-800-fontSize;
+        line-height: $whyChooseTitle-800-lineHeight;
       }
 
       .why-choose-advantages {
@@ -1483,7 +1483,7 @@
             .prices__first {
 
               .prices__price {
-                font-size: $pricesPrice600-fontSize;
+                font-size: $pricesPrice-600-fontSize;
               }
 
             }
@@ -1518,7 +1518,7 @@
             .prices__first {
 
               .prices__price {
-                font-size: $pricesPrice700-fontSize;
+                font-size: $pricesPrice-700-fontSize;
               }
 
             }
@@ -1745,7 +1745,7 @@
             justify-items: start;
 
             .testimonial__person {
-              text-align: $testimonialPerson900-textalign;
+              text-align: $testimonialPerson-900-textalign;
 
             }
 
@@ -1769,7 +1769,7 @@
       content: "";
       height: 25px;
       width: 1px;
-      background-color: $slickPrevAfter900-bgc;
+      background-color: #e7e7e7;
       top: 25%;
       right: -8px;
     }
@@ -1892,8 +1892,8 @@
       text-align: left;
 
       &__title {
-        font-size: $faqTitle-fontSize800;
-        line-height: $faqTitle-lineHeight800;
+        font-size: $faqTitle-800-fontSize;
+        line-height: $faqTitle-800-lineHeight;
         padding-bottom: 30px;
       }
 
@@ -1913,8 +1913,8 @@
 @include respond-to('minW-900px') {
   /* --------- Frequently Asked Questions --------- */
   .faq-wrap {
-    padding-top: 100px; /* DESKTOP */
-    padding-bottom: 100px; /* DESKTOP */
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
 }
@@ -1999,8 +1999,8 @@
         .download__content {
 
           .download__title {
-            font-size: $downloadTitle-fontSize800;
-            line-height: $downloadTitle-lineHeight800;
+            font-size: $downloadTitle-800-fontSize;
+            line-height: $downloadTitle-800-lineHeight;
           }
 
           .download__btns {
@@ -2224,7 +2224,7 @@
     right: 30px;
 
     &::after {
-      line-height: $toTopAfter-lineHeight900;
+      line-height: $toTopAfter-900-lineHeight;
     }
 
   }

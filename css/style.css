@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/* --------- Back To Top Button --------- */
 /* --------- Common Styles --------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -523,7 +522,7 @@ body {
     background-position: left center;
   }
 }
-/* Smart Jackpots */
+/* --------- Smart Jackpots --------- */
 .smart-jackpots-wrap {
   padding-top: 30px;
 }
@@ -1379,9 +1378,7 @@ body {
   /* --------- Frequently Asked Questions --------- */
   .faq-wrap {
     padding-top: 100px;
-    /* DESKTOP */
     padding-bottom: 100px;
-    /* DESKTOP */
   }
 }
 /* --------- Download --------- */
