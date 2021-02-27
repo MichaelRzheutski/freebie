@@ -4,7 +4,7 @@ $(function() {
       introH = $("#nav-wrap").innerHeight(),
       scrollOffset = $(window).scrollTop();
 
-  // Fixed Header
+  // --------- Fixed Header --------- //
   checkScroll(scrollOffset);
 
   $(window).on("scroll", function() {
@@ -23,7 +23,7 @@ $(function() {
   };
 
 
-  // Menu nav toggle
+  // --------- Toggle Menu --------- //
   $("#nav-toggle").on("click", function(event){
     event.preventDefault();
 
@@ -32,7 +32,7 @@ $(function() {
   });
 
 
-  // Smooth Scroll to elements
+  // --------- Smooth Scroll To Elements --------- //
   $("[data-scroll]").on("click", function(event){
     event.preventDefault();
 
@@ -49,7 +49,7 @@ $(function() {
   });
 
 
-  // Slider
+  // --------- Slick Slider--------- //
   $("[data-slider]").slick({
       infinite: true,
       fade: false,
@@ -58,7 +58,7 @@ $(function() {
   });
 
 
-  // Collapse
+  // --------- Accordion Collapse --------- //
   $("[data-collapse]").on("click", function(event) {
       event.preventDefault();
 
@@ -69,7 +69,7 @@ $(function() {
   });
 
 
-  // ToTop Button
+  // --------- To Top Button --------- //
   let btn = $('#to-top');
 
   $(window).scroll(function() {
@@ -88,7 +88,7 @@ $(function() {
 });
 
 
-// Price Switcher
+// --------- Price Switcher --------- //
 function priceSwitch() {
   let checkbox = document.getElementById('dn');
   let text1 = document.getElementsByClassName('text1');
