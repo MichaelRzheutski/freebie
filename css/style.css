@@ -172,7 +172,7 @@ body {
   color: #fff;
   line-height: 2.5em;
   padding-left: 1em;
-  background-color: #242f51;
+  background-color: #242f52;
 }
 .header__elements .nav-wrap .logo-nav .nav__item:hover {
   background-color: #0032cf;
@@ -239,7 +239,7 @@ body {
   left: 0;
   right: 0;
   transform: translate3d(0, 0, 0);
-  color: #fff;
+  color: transparent;
 }
 .header__elements .nav-wrap.fixed .nav__item:hover span::after {
   background-color: #242f51;
