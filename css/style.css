@@ -218,13 +218,13 @@ body {
 .header__elements .nav-wrap .logo-nav .nav-toggle__item::after {
   bottom: -10px;
 }
-.header__elements .nav-wrap .logo-nav .nav-toggle.active .header__elements .nav-wrap .logo-nav .nav-toggle__item {
+.header__elements .nav-wrap .logo-nav .nav-toggle.active .nav-toggle__item {
   background: none;
 }
-.header__elements .nav-wrap .logo-nav .nav-toggle.active .header__elements .nav-wrap .logo-nav .nav-toggle__item::before {
+.header__elements .nav-wrap .logo-nav .nav-toggle.active .nav-toggle__item::before {
   transform: rotate(-45deg) translate(-7px, 6px);
 }
-.header__elements .nav-wrap .logo-nav .nav-toggle.active .header__elements .nav-wrap .logo-nav .nav-toggle__item::after {
+.header__elements .nav-wrap .logo-nav .nav-toggle.active .nav-toggle__item::after {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 .header__elements .nav-wrap.fixed {
