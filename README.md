@@ -1,6 +1,6 @@
 # Freebie
 
-![Freebie - Entire Page](/img/freebie.png)
+![Freebie - Entire Page](freebie.png)
 
 Адаптивная вёрстка шаблона **Freebie**.
 
