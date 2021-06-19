@@ -4,4 +4,4 @@
 
 Используемые технологии: **HTML5**, **CSS3**, **CSS-Grid**, **FlexBox**, **SCSS**, **БЭМ**, **GIT**.
 
-![Freebie - Entire Page](freebie.png)
+![Freebie - Entire Page](freebie.jpg)
